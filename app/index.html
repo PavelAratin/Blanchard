@@ -4,21 +4,449 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="swiper/swiper.min.css">
+  <link rel="stylesheet" href="normalize/normalize.css">
+<link rel="stylesheet" href="swiper/swiper.css">
   <link rel="stylesheet" href="css/main.css">
   <title>Blanchard</title>
 </head>
 <body>
   <header class="header">
-  <h1>Ghbdstn</h1>
-  <h2>sdfsdf</h2>
-  dsfdf
-  asdasd
-  asdasd
-  sdfsdfasdasd
-  asdsad
-  sdfdsf
+  <div class="header__top">
+    <div class="container">
+      <div class="header__wrapper">
+        <a href="#" class="header__logo-link"><img src="img/logo.svg" alt="" class="header__logo"></a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Галерея</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Каталог</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">События</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Проекты</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="header__login">Войти</a>
+      </div>
+    </div>
+  </div>
+  <div class="header__bottom">
+    <div class="container">
+      <div class="header__wrapper">
+        <ul class="header__list">
+          <li class="header__item"><a href="#" class="header__link">Реализм</a></li>
+          <li class="header__item"><a href="#" class="header__link">Импрессионизм</a></li>
+          <li class="header__item"><a href="#" class="header__link">Постимпрессионизм</a></li>
+          <li class="header__item"><a href="#" class="header__link">Аванагрд</a></li>
+          <li class="header__item"><a href="#" class="header__link">Футуризм</a></li>
+        </ul>
+        <form action="#" class="header__form">
+          <input class="header__input" type="text" value="Поиск по сайту">
+        </form>
+      </div>
+    </div>
+  </div>
 </header>
- 
+  <main>
+    <section class="hero">
+  <div class="swiper hero__swiper js-hero__swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide hero__swiper-slide hero__swiper-slide--one">
+        <div class="container container--hero">
+          <h1 class="hero__title">Прикоснитесь к прекрасному</h1>
+        <p class="hero__subtitle">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт
+          предпосылки для новых предложений.</p>
+          <button class="hero__button">Подписаться на рассылку</button>
+        </div>
+      </div>
+      <div class="swiper-slide hero__swiper-slide hero__swiper-slide--two">
+        <div class="container container--hero">
+          <h1 class="hero__title">Прикоснитесь к прекрасному</h1>
+        <p class="hero__subtitle">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт
+          предпосылки для новых предложений.</p>
+          <button class="hero__button">Подписаться на рассылку</button>
+        </div>
+      </div>
+      <div class="swiper-slide hero__swiper-slide hero__swiper-slide--three">
+        <div class="container container--hero">
+          <h1 class="hero__title">Прикоснитесь к прекрасному</h1>
+        <p class="hero__subtitle">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт
+          предпосылки для новых предложений.</p>
+          <button class="hero__button">Подписаться на рассылку</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="about">
+ <div class="container">
+  <h2 class="about__title">
+    О нас
+  </h2>
+  <p class="about__subtitle">
+    Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника
+    как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует,
+    однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации
+    модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт
+    необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса
+    распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей
+    оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.
+  </p>
+ </div>
+</section>
+    <section class="gallerey">
+  <div class="container">
+    <div class="gallerey__wrapper">
+      <div class="gallerey__left">
+        <h2 class="gallerey__title">Галерея</h2>
+        <div class="gallerey__filter">
+          <span class="gallerey__descr">Фильтр:</span>
+          <button class="gallerey__button">Живопись</button>
+          <ul class="gallerey__dropdown-list gallerey__dropdown-list--hidden">
+            <li class="gallerey__dropdown-item">Рисунок</li>
+            <li class="gallerey__dropdown-item">Скульптура</li>
+          </ul>
+        </div>
+        <div class="checkboxes">
+          <label>
+            <input type="checkbox" class="checkboxes__real-checkbox">
+            <span class="checkboxes__custome-checkbox"></span>
+            XIX век
+          </label>
+          <label>
+            <input type="checkbox" class="checkboxes__real-checkbox">
+            <span class="checkboxes__custome-checkbox"></span>
+            XX век
+          </label>
+          <label>
+            <input type="checkbox" class="checkboxes__real-checkbox">
+            <span class="checkboxes__custome-checkbox"></span>
+            Современность
+          </label>
+        </div>
+      </div>
+      <div class="gallerey__right">
+        <div class="gallerey-swiper-wrapper">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper js-gallerey__swiper gallerey__swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="gallerey__img" src="../img/gallerey-img1.jpg" alt="Картина1">
+              </div>
+              <div class="swiper-slide"><img class="gallerey__img" src="../img/gallerey-img2.jpg" alt="Картина2"></div>
+              <div class="swiper-slide"><img class="gallerey__img" src="../img/gallerey-img3.jpg" alt="Картина3"></div>
+              <div class="swiper-slide"><img class="gallerey__img" src="../img/gallerey-img4.jpg" alt="Картина4"></div>
+              <div class="swiper-slide"><img class="gallerey__img" src="../img/gallerey-img5.jpg" alt="Картина5"></div>
+              <div class="swiper-slide"><img class="gallerey__img" src="../img/gallerey-img6.jpg" alt="Картина6"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="catalog">
+  <div class="container">
+    <h2 class="catalog__title">Каталог</h2>
+    <p class="catalog__subtitle">Акционеры крупнейших компаний, которые представляют собой яркий пример
+      континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и
+      морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и
+      по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы. </p>
+    <div class="catalog__wrapper">
+      <div class="catalog__left">
+        <img class="catalog__img" src="../img/image 3.jpg" alt="Картинка в каталоге">
+        <span class="catalog__img-title">Доменико Гирландайо</span>
+        <span class="catalog__img-age">2 июня 1448 — 11 января 1494</span>
+        <p class="catalog__img-descr">Один из ведущих флорентийских художников Кватроченто, основатель художественной
+          династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный
+          Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло,
+          со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные
+          граждане Флоренции в костюмах того времени).</p>
+      </div>
+      <div class="catalog__right">
+        <div class="accordion">
+          <p class="accordion__title" data-name="accordion-title">C 1400 по 1499 гг.</p>
+          <div class="accordion__body accordion__body--hidden">
+            <ul class="accordion__list">
+              <li class="accordion__item"><a href="#" class="accordion__link">Бенедетто ди Биндо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бергоньоне, Амброджо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Биссоло, Франческо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Больтраффио, Джованни</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бонсиньори, Франческо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Боттичини, Рафаэлло</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Брамантино</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бреа, Людовико</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бьяджо д’Антонио Туччи</a></li>
+            </ul>
+            <ul class="accordion__list">
+              <li class="accordion__item"><a href="#" class="accordion__link">Бенедетто ди Биндо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бергоньоне, Амброджо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Биссоло, Франческо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Больтраффио, Джованни</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бонсиньори, Франческо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Боттичини, Рафаэлло</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Брамантино</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бреа, Людовико</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бьяджо д’Антонио Туччи</a></li>
+            </ul>
+            <ul class="accordion__list">
+              <li class="accordion__item"><a href="#" class="accordion__link">Бенедетто ди Биндо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бергоньоне, Амброджо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Биссоло, Франческо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Больтраффио, Джованни</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бонсиньори, Франческо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Боттичини, Рафаэлло</a></li>
+            </ul>
+          </div>
+          <p class="accordion__title" data-name="accordion-title">C 1500 по 1599 гг.</p>
+          <div class="accordion__body accordion__body--hidden">
+            <ul class="accordion__list">
+              <li class="accordion__item"><a href="#" class="accordion__link">Бенедетто ди Биндо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бергоньоне, Амброджо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Биссоло, Франческо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Больтраффио, Джованни</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бонсиньори, Франческо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Боттичини, Рафаэлло</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Брамантино</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бреа, Людовико</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бьяджо д’Антонио Туччи</a></li>
+            </ul>
+            <ul class="accordion__list">
+              <li class="accordion__item"><a href="#" class="accordion__link">Бенедетто ди Биндо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бергоньоне, Амброджо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Биссоло, Франческо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Больтраффио, Джованни</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бонсиньори, Франческо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Боттичини, Рафаэлло</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Брамантино</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бреа, Людовико</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бьяджо д’Антонио Туччи</a></li>
+            </ul>
+            <ul class="accordion__list">
+              <li class="accordion__item"><a href="#" class="accordion__link">Бенедетто ди Биндо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бергоньоне, Амброджо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Биссоло, Франческо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Больтраффио, Джованни</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бонсиньори, Франческо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Боттичини, Рафаэлло</a></li>
+            </ul>
+          </div>
+          <p class="accordion__title" data-name="accordion-title">C 1600 по 1699 гг.</p>
+          <div class="accordion__body accordion__body--hidden">
+            <ul class="accordion__list">
+              <li class="accordion__item"><a href="#" class="accordion__link">Бенедетто ди Биндо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бергоньоне, Амброджо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Биссоло, Франческо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Больтраффио, Джованни</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бонсиньори, Франческо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Боттичини, Рафаэлло</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Брамантино</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бреа, Людовико</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бьяджо д’Антонио Туччи</a></li>
+            </ul>
+            <ul class="accordion__list">
+              <li class="accordion__item"><a href="#" class="accordion__link">Бенедетто ди Биндо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бергоньоне, Амброджо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Биссоло, Франческо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Больтраффио, Джованни</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бонсиньори, Франческо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Боттичини, Рафаэлло</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Брамантино</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бреа, Людовико</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бьяджо д’Антонио Туччи</a></li>
+            </ul>
+            <ul class="accordion__list">
+              <li class="accordion__item"><a href="#" class="accordion__link">Бенедетто ди Биндо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бергоньоне, Амброджо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Биссоло, Франческо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Больтраффио, Джованни</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бонсиньори, Франческо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Боттичини, Рафаэлло</a></li>
+            </ul>
+          </div>
+          <p class="accordion__title" data-name="accordion-title">C 1700 по 1799 гг.</p>
+          <div class="accordion__body accordion__body--hidden">
+            <ul class="accordion__list">
+              <li class="accordion__item"><a href="#" class="accordion__link">Бенедетто ди Биндо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бергоньоне, Амброджо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Биссоло, Франческо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Больтраффио, Джованни</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бонсиньори, Франческо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Боттичини, Рафаэлло</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Брамантино</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бреа, Людовико</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бьяджо д’Антонио Туччи</a></li>
+            </ul>
+            <ul class="accordion__list">
+              <li class="accordion__item"><a href="#" class="accordion__link">Бенедетто ди Биндо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бергоньоне, Амброджо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Биссоло, Франческо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Больтраффио, Джованни</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бонсиньори, Франческо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Боттичини, Рафаэлло</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Брамантино</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бреа, Людовико</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бьяджо д’Антонио Туччи</a></li>
+            </ul>
+            <ul class="accordion__list">
+              <li class="accordion__item"><a href="#" class="accordion__link">Бенедетто ди Биндо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бергоньоне, Амброджо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Биссоло, Франческо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Больтраффио, Джованни</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бонсиньори, Франческо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Боттичини, Рафаэлло</a></li>
+            </ul>
+          </div>
+          <p class="accordion__title" data-name="accordion-title">C 1800 по 1899 гг.</p>
+          <div class="accordion__body accordion__body--hidden">
+            <ul class="accordion__list">
+              <li class="accordion__item"><a href="#" class="accordion__link">Бенедетто ди Биндо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бергоньоне, Амброджо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Биссоло, Франческо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Больтраффио, Джованни</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бонсиньори, Франческо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Боттичини, Рафаэлло</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Брамантино</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бреа, Людовико</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бьяджо д’Антонио Туччи</a></li>
+            </ul>
+            <ul class="accordion__list">
+              <li class="accordion__item"><a href="#" class="accordion__link">Бенедетто ди Биндо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бергоньоне, Амброджо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Биссоло, Франческо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Больтраффио, Джованни</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бонсиньори, Франческо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Боттичини, Рафаэлло</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Брамантино</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бреа, Людовико</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бьяджо д’Антонио Туччи</a></li>
+            </ul>
+            <ul class="accordion__list">
+              <li class="accordion__item"><a href="#" class="accordion__link">Бенедетто ди Биндо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бергоньоне, Амброджо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Биссоло, Франческо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Больтраффио, Джованни</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бонсиньори, Франческо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Боттичини, Рафаэлло</a></li>
+            </ul>
+          </div>
+          <p class="accordion__title" data-name="accordion-title">C 1900 по 1999 гг.</p>
+          <div class="accordion__body accordion__body--hidden">
+            <ul class="accordion__list">
+              <li class="accordion__item"><a href="#" class="accordion__link">Бенедетто ди Биндо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бергоньоне, Амброджо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Биссоло, Франческо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Больтраффио, Джованни</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бонсиньори, Франческо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Боттичини, Рафаэлло</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Брамантино</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бреа, Людовико</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бьяджо д’Антонио Туччи</a></li>
+            </ul>
+            <ul class="accordion__list">
+              <li class="accordion__item"><a href="#" class="accordion__link">Бенедетто ди Биндо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бергоньоне, Амброджо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Биссоло, Франческо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Больтраффио, Джованни</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бонсиньори, Франческо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Боттичини, Рафаэлло</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Брамантино</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бреа, Людовико</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бьяджо д’Антонио Туччи</a></li>
+            </ul>
+            <ul class="accordion__list">
+              <li class="accordion__item"><a href="#" class="accordion__link">Бенедетто ди Биндо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бергоньоне, Амброджо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Биссоло, Франческо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Больтраффио, Джованни</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бонсиньори, Франческо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Боттичини, Рафаэлло</a></li>
+            </ul>
+          </div>
+          <p class="accordion__title" data-name="accordion-title">C 2000 г.</p>
+          <div class="accordion__body accordion__body--hidden">
+            <ul class="accordion__list">
+              <li class="accordion__item"><a href="#" class="accordion__link">Бенедетто ди Биндо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бергоньоне, Амброджо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Биссоло, Франческо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Больтраффио, Джованни</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бонсиньори, Франческо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Боттичини, Рафаэлло</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Брамантино</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бреа, Людовико</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бьяджо д’Антонио Туччи</a></li>
+            </ul>
+            <ul class="accordion__list">
+              <li class="accordion__item"><a href="#" class="accordion__link">Бенедетто ди Биндо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бергоньоне, Амброджо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Биссоло, Франческо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Больтраффио, Джованни</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бонсиньори, Франческо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Боттичини, Рафаэлло</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Брамантино</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бреа, Людовико</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бьяджо д’Антонио Туччи</a></li>
+            </ul>
+            <ul class="accordion__list">
+              <li class="accordion__item"><a href="#" class="accordion__link">Бенедетто ди Биндо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бергоньоне, Амброджо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Биссоло, Франческо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Больтраффио, Джованни</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Бонсиньори, Франческо</a></li>
+              <li class="accordion__item"><a href="#" class="accordion__link">Боттичини, Рафаэлло</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="events">
+  <div class="container">
+    <h2 class="events__title">События</h2>
+    <div class="swiper events__swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="../img/events__img1.jpg" alt="Картинка1" class="events__img">
+          <div class="events__wrapper">
+            <span class="events__value">Музей им. Щусева<br>
+              с 20 марта по 30 апреля</span>
+            <p class="events__subtitle">Книжная гравюра в живом восприятии</p>
+            <p class="events__descr">Один из ведущих флорентийских художников Кватроченто, основатель художественной
+              династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+            <a href="#" class="events__link">Подробнее</a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="../img/events__img2.jpg" alt="Картинка2" class="events__img">
+          <div class="events__wrapper">
+            <span class="events__value">ММОМА
+              24 марта 19:00</span>
+            <p class="events__subtitle">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</p>
+            <p class="events__descr">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.</p>
+            <a href="#" class="events__link">Подробнее</a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="../img/events__img3.jpg" alt="Картинка1" class="events__img">
+          <div class="events__wrapper">
+            <span class="events__value">Еврейский музей
+              с 31 марта по 21 апреля</span>
+            <p class="events__subtitle">Выставка «Формация 2020»</p>
+            <p class="events__descr">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений</p>
+            <a href="#" class="events__link">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+</section>
+  </main>
+ <script src="swiper/swiper.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

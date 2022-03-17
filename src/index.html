@@ -4,12 +4,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="swiper/swiper.min.css">
+  <link rel="stylesheet" href="normalize/normalize.css">
+<link rel="stylesheet" href="swiper/swiper.css">
   <link rel="stylesheet" href="css/main.css">
   <title>Blanchard</title>
 </head>
 <body>
   @include('partials/header.html')
- 
+  <main>
+    @include('partials/hero.html')
+    @include('partials/about.html')
+    @include('partials/gallerey.html')
+    @include('partials/katalog.html')
+    @include('partials/events.html')
+  </main>
+ <script src="swiper/swiper.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

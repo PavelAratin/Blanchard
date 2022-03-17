@@ -1,0 +1,76 @@
+@import "variables";
+@import "mixins";
+.header {
+  color: $colorWhite;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  &__logo-link {
+    height: 40px;
+  }
+  &__logo {
+    width: 173px;
+    margin-right: 179px;
+  }
+  &__wrapper {
+    @include flex-align;
+  }
+  &__top {
+    background: $colorBlack;
+    padding: 30px 0;
+    font-size: 18px;
+  }
+  &__bottom{
+    background: $colorBlackTransparent;
+    padding: 24px 0 21px 0;
+  }
+  &__wrapper{
+    @include flex-align;
+    justify-content: space-between;
+  }
+  &__list{
+    @include flex-align;
+  }
+  &__item:not(:last-child){
+    margin-right: 97px;
+
+  }
+  &__link{
+    padding-right: 15px;
+    background: url('../img/arrow-down.svg') no-repeat right 65%;
+    font-weight: 400;
+    letter-spacing: 1.1px;
+  }
+  &__login {
+    font-weight: 400;
+    margin-left: auto;
+    padding-left: 20px;
+    background: url("../img/login.svg") no-repeat center left;
+  }
+  &__form{
+    background: url('../img/search.svg') no-repeat left center;
+    padding-left: 30px;
+  }
+  &__input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid $colorWhite;
+    width: 220px;
+    padding-bottom: 5px;
+    letter-spacing: 0.9px;
+    color: $colorWhite;
+  }
+}
+.nav{
+  &__list {
+    @include flex-align;
+  }
+  &__item:not(:last-child) {
+    margin-right: 65px;
+  }
+  &__link {
+    font-weight: 600;
+  }
+}

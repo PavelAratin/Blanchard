@@ -1,0 +1,55 @@
+.hero__swiper {
+  width: 100%;
+  height: 800px;
+}
+.hero__swiper-slide{
+  background: no-repeat cover;
+  background-position: center;
+}
+.hero__swiper-slide--one{
+  background-image: url('../img/hero-slide-1.jpg');
+}
+.hero__swiper-slide--two{
+  background-image: url('../img/hero-slide-2.jpg');
+}
+.hero__swiper-slide--three{
+  background-image: url('../img/hero-slide-3.jpg');
+}
+
+.gallerey-swiper-wrapper{
+  position: relative;
+}
+.gallerey-swiper-wrapper .swiper-pagination{
+  color: #ffffff;
+  width: fit-content;
+  top: -53px;
+  right: auto;
+  left: 51px;
+}
+
+.gallerey__swiper {
+  width: 1180px;
+  height: 350px;
+}
+
+.gallerey-swiper-wrapper .swiper-button-prev,
+.gallerey-swiper-wrapper .swiper-button-next{
+  width: 30px;
+  height: 30px;
+  background: no-repeat;
+  top: -38px;
+}
+.gallerey-swiper-wrapper .swiper-button-next{
+  background-image: url('../img/arrow-slider-next.svg');
+  right: auto;
+  left: 103px;
+}
+.gallerey-swiper-wrapper .swiper-button-prev{
+  background-image: url('../img/arrow-slider-prev.svg');
+ left: 3px;
+}
+
+.gallerey-swiper-wrapper .swiper-button-prev::after,
+.gallerey-swiper-wrapper .swiper-button-next::after{
+  display: none;
+}

@@ -35,13 +35,12 @@ function htmlInclude() {
 }
 
 function imgToApp() {
-  return src(['./src/img/**.jpg', './src/img/**.png', './src/img/**.jpeg'])
+  return src(['./src/img/**.jpg', './src/img/**.png', './src/img/**.jpeg','./src/img/**.svg'])
     .pipe(dest('./app/img'))
 }
 
 function clean() {
   return del(['app/*'])
-
 }
 
 function tinyPng() {
@@ -58,6 +57,16 @@ function scripts(){
   .pipe(dest('./app/js'))
   .pipe(browserSync.stream())
 }
+function normalizeToApp(){
+  return src('./src/normalize/normalize.css')
+  .pipe(dest('./app/normalize'))
+}
+
+function swiper(){
+  return src('./src/swiper/**')
+  .pipe(dest('./app/swiper'))
+  .pipe(browserSync.stream())
+}
 
 function watchFiles() {
   browserSync.init({
@@ -71,13 +80,17 @@ function watchFiles() {
   watch('./src/img/**.jpg', imgToApp);
   watch('./src/img/**.png', imgToApp);
   watch('./src/img/**.jpeg', imgToApp);
+  watch('./src/img/**.svg', imgToApp);
   watch('./src/fonts/**.ttf', fonts);
   watch('./src/js/*.js', scripts);
+  watch('./src/swiper/swiper.css', swiper);
 }
 
 exports.styles = styles;
 exports.watchFiles = watchFiles;
 exports.fileinclude = htmlInclude;
 exports.tinyPng = tinyPng;
+exports.normalizeToApp = normalizeToApp;
+exports.swiper = swiper;
 
-exports.default = series(clean, parallel(htmlInclude, fonts,tinyPng,imgToApp), styles, scripts,watchFiles)
+exports.default = series(clean, parallel(htmlInclude, fonts,tinyPng,imgToApp), styles,normalizeToApp,swiper, scripts,watchFiles)
