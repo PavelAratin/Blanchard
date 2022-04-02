@@ -8,20 +8,31 @@
     max-width: 590px;
     line-height: 1.2;
     letter-spacing: 4px;
+    margin-bottom: 15px;
   }
   &__subtitle{
+    margin: 0;
     font-size: 18px;
     line-height: 1.6;
     max-width: 570px;
     letter-spacing: 1px;
-    margin-bottom: 92px;
+    margin-bottom: 95px;
   }
   &__button{
     @include button-rezet;
     background:$colorFiolet;
-    padding: 26px 35px;
+    padding: 23px 32px;
     color: inherit;
     font-weight: inherit;
     letter-spacing: 2px;
+    border: 3px solid transparent;
+    transition: all 0.1s linear;
+    &:hover{
+      border-color:#D1A9F0;
+    }
+    &:active{
+      border-color:#D1A9F0;
+      background-color: #7943A4;
+    }
   }
 }

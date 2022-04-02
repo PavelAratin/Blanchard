@@ -2,10 +2,16 @@
   <div class="header__top">
     <div class="container">
       <div class="header__wrapper">
+        <button class="burger">
+          <span class="burger__line burger__line--top"></span>
+          <span class="burger__line burger__line--middle"></span>
+          <span class="burger__line burger__line--bottom"></span>
+        </button>
         <a href="#" class="header__logo-link"><img src="img/logo.svg" alt="" class="header__logo"></a>
         <nav class="nav">
           <ul class="nav__list">
-            <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">О нас</a>
+            </li>
             <li class="nav__item"><a href="#" class="nav__link">Галерея</a></li>
             <li class="nav__item"><a href="#" class="nav__link">Каталог</a></li>
             <li class="nav__item"><a href="#" class="nav__link">События</a></li>
@@ -14,6 +20,9 @@
           </ul>
         </nav>
         <a href="#" class="header__login">Войти</a>
+        <form action="#" class="header__form header__form--mobile">
+          <img src="../img/search.svg" alt="Поиск по сайту">
+        </form>
       </div>
     </div>
   </div>
@@ -21,11 +30,138 @@
     <div class="container">
       <div class="header__wrapper">
         <ul class="header__list">
-          <li class="header__item"><a href="#" class="header__link">Реализм</a></li>
-          <li class="header__item"><a href="#" class="header__link">Импрессионизм</a></li>
-          <li class="header__item"><a href="#" class="header__link">Постимпрессионизм</a></li>
-          <li class="header__item"><a href="#" class="header__link">Аванагрд</a></li>
-          <li class="header__item"><a href="#" class="header__link">Футуризм</a></li>
+          <li class="header__item" data-dropdown="tab-1">
+            <a href="#" class="header__link">Реализм</a>
+            <div class="dropdown-container" data-dropdown="tab-1" id="tab-1">
+              <ul class="dropdown-list" data-simplebar>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link dropdown-list__link--tintoretto">Тинторетто</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link dropdown-list__link--fridrih">Фридрих</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link dropdown-list__link--leonardo">Леонардо</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link dropdown-list__link--verokko">Вероккьо</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link dropdown-list__link--verokko">Вероккьо</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link dropdown-list__link--verokko">Вероккьо</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link dropdown-list__link--verokko">Вероккьо</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="header__item" data-dropdown="tab-2"><a href="#" class="header__link">Импрессионизм</a>
+          <div class="dropdown-container" data-dropdown="tab-2" id="tab-2">
+              <ul class="dropdown-list" data-simplebar>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link dropdown-list__link--tintoretto">Тинторетто</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link dropdown-list__link--fridrih">Фридрих</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link dropdown-list__link--leonardo">Леонардо</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link dropdown-list__link--verokko">Вероккьо</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link dropdown-list__link--verokko">Вероккьо</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link dropdown-list__link--verokko">Вероккьо</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link dropdown-list__link--verokko">Вероккьо</a>
+                </li>
+              </ul>
+            </div></li>
+          <li class="header__item" data-dropdown="tab-3"><a href="#" class="header__link">Постимпрессионизм</a>
+          <div class="dropdown-container" data-dropdown="tab-3" id="tab-3">
+              <ul class="dropdown-list" data-simplebar>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link dropdown-list__link--tintoretto">Тинторетто</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link dropdown-list__link--fridrih">Фридрих</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link dropdown-list__link--leonardo">Леонардо</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link dropdown-list__link--verokko">Вероккьо</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link dropdown-list__link--verokko">Вероккьо</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link dropdown-list__link--verokko">Вероккьо</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link dropdown-list__link--verokko">Вероккьо</a>
+                </li>
+              </ul>
+            </div></li>
+          <li class="header__item" data-dropdown="tab-4"><a href="#" class="header__link">Аванагрд</a>
+          <div class="dropdown-container" data-dropdown="tab-4" id="tab-4">
+              <ul class="dropdown-list" data-simplebar>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link dropdown-list__link--tintoretto">Тинторетто</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link dropdown-list__link--fridrih">Фридрих</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link dropdown-list__link--leonardo">Леонардо</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link dropdown-list__link--verokko">Вероккьо</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link dropdown-list__link--verokko">Вероккьо</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link dropdown-list__link--verokko">Вероккьо</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link dropdown-list__link--verokko">Вероккьо</a>
+                </li>
+              </ul>
+            </div></li>
+          <li class="header__item" data-dropdown="tab-5"><a href="#" class="header__link">Футуризм</a>
+          <div class="dropdown-container" data-dropdown="tab-5" id="tab-5">
+              <ul class="dropdown-list" data-simplebar>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link dropdown-list__link--tintoretto">Тинторетто</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link dropdown-list__link--fridrih">Фридрих</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link dropdown-list__link--leonardo">Леонардо</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link dropdown-list__link--verokko">Вероккьо</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link dropdown-list__link--verokko">Вероккьо</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link dropdown-list__link--verokko">Вероккьо</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="#" class="dropdown-list__link dropdown-list__link--verokko">Вероккьо</a>
+                </li>
+              </ul>
+            </div></li>
         </ul>
         <form action="#" class="header__form">
           <input class="header__input" type="text" value="Поиск по сайту">

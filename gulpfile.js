@@ -45,10 +45,10 @@ function clean() {
 
 function tinyPng() {
   return src(['./src/img/**.jpg', './src/img/**.png', './src/img/**.jpeg'])
-    .pipe(tinypng({
-      key: 'JS9MWwCflHycV1FDcSlkjZ8GGjTfttNw',
-      log: true
-    }))
+    // .pipe(tinypng({
+    //   key: 'JS9MWwCflHycV1FDcSlkjZ8GGjTfttNw',
+    //   log: true
+    // }))
     .pipe(dest('./app/img'))
 }
 
@@ -68,6 +68,20 @@ function swiper(){
   .pipe(browserSync.stream())
 }
 
+function simplebar(){
+  return src('./src/simplebar/**')
+  .pipe(dest('./app/simplebar'))
+}
+
+function inputMsk(){
+  return src('./src/formMask/inputmask.min.js')
+  .pipe(dest('./app/formMask'))
+}
+function formValidate(){
+  return src('./src/formValidate/just-validate.min.js')
+  .pipe(dest('./app/formValidate'))
+}
+
 function watchFiles() {
   browserSync.init({
     server: {
@@ -84,6 +98,8 @@ function watchFiles() {
   watch('./src/fonts/**.ttf', fonts);
   watch('./src/js/*.js', scripts);
   watch('./src/swiper/swiper.css', swiper);
+  watch('./src/formMask/inputmask.min.js', inputMsk);
+  watch('./src/formValidate/just-validate.min.js', formValidate);
 }
 
 exports.styles = styles;
@@ -92,5 +108,8 @@ exports.fileinclude = htmlInclude;
 exports.tinyPng = tinyPng;
 exports.normalizeToApp = normalizeToApp;
 exports.swiper = swiper;
+exports.simplebar = simplebar;
+exports.inputMsk = inputMsk;
+exports.formValidate = formValidate;
 
-exports.default = series(clean, parallel(htmlInclude, fonts,tinyPng,imgToApp), styles,normalizeToApp,swiper, scripts,watchFiles)
+exports.default = series(clean, parallel(htmlInclude, fonts,tinyPng,imgToApp), styles,normalizeToApp,swiper,simplebar,inputMsk,formValidate, scripts,watchFiles)

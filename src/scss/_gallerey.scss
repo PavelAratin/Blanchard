@@ -3,6 +3,7 @@
 .gallerey {
   padding: 85px 0 81px 0;
   background: url("../img/gallerey-bg.jpg")no-repeat center;
+  background-size: cover;
   &__wrapper {
     display: flex;
   }
@@ -65,11 +66,19 @@
   }
   &__right{
     padding-top: 79px;
+    overflow: hidden;
   }
   &__img{
     width: 100%;
-    max-width: 350px;
-    height: auto;
+    height: 350px;
+  }
+  &__swiper{
+    width: 100%;
+  }
+  &-swiper-wrapper{
+    .swiper{
+      overflow: visible;
+    }
   }
 
 }

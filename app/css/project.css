@@ -1,0 +1,104 @@
+.project__title {
+  font-weight: 400;
+  font-size: 48px;
+  color: #333333;
+  margin-bottom: 21px;
+}
+.project__description {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  max-width: 1064px;
+  margin-bottom: 22px;
+}
+.project__tultip {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("../img/tultip.svg") no-repeat center;
+  vertical-align: middle;
+  position: relative;
+}
+.project__tultip:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 350px;
+  top: -355%;
+  padding: 10px;
+  background: #9D5CD0;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s linear;
+}
+.project__tultip:before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 7.5px 0 7.5px;
+  border-color: #9D5CD0 transparent transparent transparent;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s linear;
+}
+.project__tultip:hover::after, .project__tultip:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.partners {
+  padding-bottom: 82px;
+}
+.partners__title {
+  font-weight: 600;
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 23px;
+  letter-spacing: 0.5px;
+}
+.partners img {
+  display: block;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+.partners .swiper-slide__img1:hover {
+  content: url("../img/partners-img1color.png");
+}
+.partners .swiper-slide__img2:hover {
+  content: url("../img/partners-img2color.png");
+}
+.partners .swiper-slide__img3:hover {
+  content: url("../img/partners-img3color.png");
+}
+.partners .swiper-slide__img4:hover {
+  content: url("../img/partners-img4color.png");
+}
+.partners .swiper-slide__img5:hover {
+  content: url("../img/partners-img5color.png");
+}
+.partners .swiper-slide__img6:hover {
+  content: url("../img/partners-img6color.png");
+}
+.partners .swiper-slide__img7:hover {
+  content: url("../img/partners-img7color.png");
+}
+.partners .swiper-slide__img8:hover {
+  content: url("../img/partners-img8color.png");
+}
+.partners .swiper-slide__img9:hover {
+  content: url("../img/partners-img9color.png");
+}
+.partners .swiper-slide__img10:hover {
+  content: url("../img/partners-img10color.png");
+}
