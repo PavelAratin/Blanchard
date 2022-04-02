@@ -4,9 +4,9 @@ const swiperHero = new Swiper('.js-hero__swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
-  // autoplay: {
-  //   delay: 10000
-  // }
+  autoplay: {
+    delay: 10000
+  }
 });
 //слайдер  галереи
 const swiperGallerey = new Swiper('.js-gallerey__swiper', {

@@ -45,10 +45,10 @@ function clean() {
 
 function tinyPng() {
   return src(['./src/img/**.jpg', './src/img/**.png', './src/img/**.jpeg'])
-    // .pipe(tinypng({
-    //   key: 'JS9MWwCflHycV1FDcSlkjZ8GGjTfttNw',
-    //   log: true
-    // }))
+    .pipe(tinypng({
+      key: 'JS9MWwCflHycV1FDcSlkjZ8GGjTfttNw',
+      log: true
+    }))
     .pipe(dest('./app/img'))
 }
 

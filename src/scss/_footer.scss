@@ -1,0 +1,21 @@
+.footer{
+  background: #000000;
+  padding: 47px 0 40px 0;
+  &__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__social-list{
+    display: flex;
+  }
+  &__social-item:not(:last-child){
+    margin-right: 20px;
+  }
+  &__svg:hover path{
+    fill: #ffffff;
+  }
+  &__svg:active path{
+    fill: #9D5CD0;
+  }
+}
