@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="simplebar/simplebar.css">
   <link rel="stylesheet" href="swiper/swiper.min.css">
-  <link rel="stylesheet" href="normalize/normalize.css">
   <link rel="stylesheet" href="swiper/swiper.css">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <title>Blanchard</title>
 </head>
@@ -24,22 +24,22 @@
           <span class="burger__line burger__line--middle"></span>
           <span class="burger__line burger__line--bottom"></span>
         </button>
-        <a href="#" class="header__logo-link"><img src="img/logo.svg" alt="" class="header__logo"></a>
+        <a class="header__logo-link"><img src="img/logo.svg" alt="" class="header__logo"></a>
         <nav class="nav">
           <ul class="nav__list">
-            <li class="nav__item"><a href="#" class="nav__link">О нас</a>
+            <li class="nav__item"><a href="#" class="nav__link"><span class="nav__link-text">О нас</span></a>
             </li>
-            <li class="nav__item"><a href="#" class="nav__link">Галерея</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Каталог</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">События</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Проекты</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+            <li class="nav__item"><a href="#" class="nav__link"><span class="nav__link-text">Галерея</span></a></li>
+            <li class="nav__item"><a href="#" class="nav__link"><span class="nav__link-text">Каталог</span></a></li>
+            <li class="nav__item"><a href="#" class="nav__link"><span class="nav__link-text">События</span></a></li>
+            <li class="nav__item"><a href="#" class="nav__link"><span class="nav__link-text">Проекты</span></a></li>
+            <li class="nav__item"><a href="#" class="nav__link"><span class="nav__link-text">Контакты</span></a></li>
           </ul>
         </nav>
-        <a href="#" class="header__login">Войти</a>
-        <form action="#" class="header__form header__form--mobile">
+        <a href="#" class="header__login"><span class="header__login-text">Войти</span></a>
+        <a class="header__search-mobile">
           <img src="img/search.svg" alt="Поиск по сайту">
-        </form>
+        </a>
       </div>
     </div>
   </div>
@@ -48,7 +48,7 @@
       <div class="header__wrapper">
         <ul class="header__list">
           <li class="header__item" data-dropdown="tab-1">
-            <a href="#" class="header__link">Реализм</a>
+            <a href="#" class="header__link"><span class="header__link-text">Реализм</span></a>
             <div class="dropdown-container" data-dropdown="tab-1" id="tab-1">
               <ul class="dropdown-list" data-simplebar>
                 <li class="dropdown-list__item">
@@ -75,7 +75,7 @@
               </ul>
             </div>
           </li>
-          <li class="header__item" data-dropdown="tab-2"><a href="#" class="header__link">Импрессионизм</a>
+          <li class="header__item" data-dropdown="tab-2"><a href="#" class="header__link"><span class="header__link-text">Импрессионизм</span></a>
           <div class="dropdown-container" data-dropdown="tab-2" id="tab-2">
               <ul class="dropdown-list" data-simplebar>
                 <li class="dropdown-list__item">
@@ -101,7 +101,7 @@
                 </li>
               </ul>
             </div></li>
-          <li class="header__item" data-dropdown="tab-3"><a href="#" class="header__link">Постимпрессионизм</a>
+          <li class="header__item" data-dropdown="tab-3"><a href="#" class="header__link"><span class="header__link-text">Постимпрессионизм</span></a>
           <div class="dropdown-container" data-dropdown="tab-3" id="tab-3">
               <ul class="dropdown-list" data-simplebar>
                 <li class="dropdown-list__item">
@@ -127,7 +127,7 @@
                 </li>
               </ul>
             </div></li>
-          <li class="header__item" data-dropdown="tab-4"><a href="#" class="header__link">Аванагрд</a>
+          <li class="header__item" data-dropdown="tab-4"><a href="#" class="header__link"><span class="header__link-text">Авангард</span></a>
           <div class="dropdown-container" data-dropdown="tab-4" id="tab-4">
               <ul class="dropdown-list" data-simplebar>
                 <li class="dropdown-list__item">
@@ -153,7 +153,7 @@
                 </li>
               </ul>
             </div></li>
-          <li class="header__item" data-dropdown="tab-5"><a href="#" class="header__link">Футуризм</a>
+          <li class="header__item" data-dropdown="tab-5"><a href="#" class="header__link"><span class="header__link-text">Футуризм</span></a>
           <div class="dropdown-container" data-dropdown="tab-5" id="tab-5">
               <ul class="dropdown-list" data-simplebar>
                 <li class="dropdown-list__item">
@@ -181,7 +181,13 @@
             </div></li>
         </ul>
         <form action="#" class="header__form">
-          <input class="header__input" type="text" value="Поиск по сайту" aria-label="Поиск по сайту">
+          <input class="header__input" type="text" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
+          <button class="header__button" aria-label="Кнопка поиска по сайту">
+            <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white"/>
+              </svg>
+          </button>
         </form>
       </div>
     </div>
@@ -189,31 +195,21 @@
 </header>
   <main>
     <section class="hero">
+  <div class="container hero__container">
+    <div class="hero__content">
+      <h1 class="hero__title">Прикоснитесь к прекрасному</h1>
+      <p class="hero__subtitle">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт
+        предпосылки для новых предложений.</p>
+      <button class="hero__button" aria-label="Подписка на рассылку">Подписаться на рассылку</button>
+    </div>
+  </div>
   <div class="swiper hero__swiper js-hero__swiper">
     <div class="swiper-wrapper">
       <div class="swiper-slide hero__swiper-slide hero__swiper-slide--one">
-        <div class="container container--hero">
-          <h1 class="hero__title">Прикоснитесь к прекрасному</h1>
-        <p class="hero__subtitle">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт
-          предпосылки для новых предложений.</p>
-          <button class="hero__button" aria-label="Подписка на рассылку">Подписаться на рассылку</button>
-        </div>
       </div>
       <div class="swiper-slide hero__swiper-slide hero__swiper-slide--two">
-        <div class="container container--hero">
-          <h1 class="hero__title">Прикоснитесь к прекрасному</h1>
-        <p class="hero__subtitle">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт
-          предпосылки для новых предложений.</p>
-          <button class="hero__button">Подписаться на рассылку</button>
-        </div>
       </div>
       <div class="swiper-slide hero__swiper-slide hero__swiper-slide--three">
-        <div class="container container--hero">
-          <h1 class="hero__title">Прикоснитесь к прекрасному</h1>
-        <p class="hero__subtitle">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт
-          предпосылки для новых предложений.</p>
-          <button class="hero__button">Подписаться на рассылку</button>
-        </div>
       </div>
     </div>
   </div>
@@ -248,17 +244,17 @@
           </ul>
         </div>
         <div class="checkboxes">
-          <label>
+          <label tabindex="0">
             <input type="checkbox" class="checkboxes__real-checkbox">
             <span class="checkboxes__custome-checkbox"></span>
             XIX век
           </label>
-          <label>
+          <label tabindex="0">
             <input type="checkbox" class="checkboxes__real-checkbox">
             <span class="checkboxes__custome-checkbox"></span>
             XX век
           </label>
-          <label>
+          <label tabindex="0">
             <input type="checkbox" class="checkboxes__real-checkbox">
             <span class="checkboxes__custome-checkbox"></span>
             Современность
@@ -588,7 +584,7 @@
               <p class="events__subtitle">Книжная гравюра в живом восприятии</p>
               <p class="events__descr">Один из ведущих флорентийских художников Кватроченто, основатель художественной
                 династии, которую продолжили его брат Давид и сын Ридольфо.</p>
-              <a href="#" class="events__link">Подробнее</a>
+              <a href="#" class="events__link"><span class="events__link-text">Подробнее</span></a>
             </div>
           </div>
           <div class="swiper-slide">
@@ -599,7 +595,7 @@
               <p class="events__subtitle">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</p>
               <p class="events__descr">Высокий уровень вовлечения представителей целевой аудитории является четким
                 доказательством простого факта.</p>
-              <a href="#" class="events__link">Подробнее</a>
+              <a href="#" class="events__link"><span class="events__link-text">Подробнее</span></a>
             </div>
           </div>
           <div class="swiper-slide">
@@ -610,7 +606,7 @@
               <p class="events__subtitle">Выставка «Формация 2020»</p>
               <p class="events__descr">Идейные соображения высшего порядка, а также современная методология разработки
                 играет важную роль в формировании глубокомысленных рассуждений</p>
-              <a href="#" class="events__link">Подробнее</a>
+              <a href="#" class="events__link"><span class="events__link-text">Подробнее</span></a>
             </div>
           </div>
           <div class="swiper-slide">
@@ -639,11 +635,11 @@
       всего, постоянное информационно-пропагандистское <span class="project__tultip" data-text="Пример современных тенденций - современная методология разработки"></span> обеспечение нашей
       деятельности однозначно фиксирует необходимость
       экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут
-      быть рассмотрены <span class="project__tultip" data-text="В стремлении повысить качество"></span> исключительно в разрезе маркетинговых и финансовых <span
+      быть рассмотрены <span class="project__tultip project__tultip--value" data-text="В стремлении повысить качество"></span> исключительно в разрезе маркетинговых и финансовых <span
         class="project__tultip" data-text="Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции  "></span> предпосылок. Банальные, но неопровержимые
       выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою
       очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее:
-      <a href="#" class="project__link">blanchard-art.ru/projects</a>
+      <a href="#" class="project__link"><span class="project__link-text">blanchard-art.ru/projects</span></a>
     </p>
     <div class="partners project__partners">
       <h3 class="partners__title">Партнёры проектов:</h3>
@@ -676,14 +672,16 @@
         <p class="form__adress">Леонтьевский переулок, дом 5/1</p>
       </div>
       <div class="form__inputs">
-        <input class="form__input" type="text" data-validate-field="fio" placeholder="Имя*" arai-label="Введите имя">
+        <input class="form__input" type="text" data-validate-field="fio" placeholder="Имя*" aria-label="Введите имя">
         <input class="form__input js-form__input" type="text" value="Телефон*" aria-label="Введите телефон">
-        <button class="form__btn" type="submit" arai-label="Заказать обратный звонок">Заказать обратный звонок</button>
+        <button class="form__btn" type="submit" aria-label="Заказать обратный звонок">Заказать обратный звонок</button>
       </div>
       <div class="form__social">
         <p class="form__contact">Связаться в один клик</p>
-        <img class="form__img" src="img/Whatsapp-Icon.svg" alt="Whatsapp-Icon">
-        <img class="form__img" src="img/telegram-icon.svg" alt="Whatsapp-Icon">
+        <ul class="form__list">
+          <li class="form__item"><a href="" class="form__link"><img class="form__img" src="img/Whatsapp-Icon.svg" alt="Whatsapp-Icon"></a></li>
+          <li class="form__item"><a href="" class="form__link">        <img class="form__img" src="img/telegram-icon.svg" alt="Whatsapp-Icon"></a></li>
+        </ul>
       </div>
     </form>
   </div>
@@ -809,7 +807,7 @@
   <div class="container">
     <div class="footer__wrapper">
       <a href="#" class="footer__link-img">
-        <img class="footer__logo" src="../img/logo.svg" alt="Лого в подвале">
+        <img class="footer__logo" src="img/logo.svg" alt="Лого в подвале">
       </a>
       <ul class="footer__social-list">
         <li class="footer__social-item"><a href="#" class="footer__link">
@@ -842,6 +840,13 @@
       </ul>
     </div>
   </div>
+  <p class="footer__true-css">
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Правильный CSS!" />
+    </a>
+</p>
 </footer>
   </div>
   <script src="./simplebar/simplebar.min.js"></script>

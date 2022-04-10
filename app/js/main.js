@@ -6,7 +6,9 @@ const swiperHero = new Swiper('.js-hero__swiper', {
   loop: true,
   autoplay: {
     delay: 10000
-  }
+  },
+  speed: 10000,
+  effect: "fade"
 });
 //слайдер  галереи
 const swiperGallerey = new Swiper('.js-gallerey__swiper', {
@@ -188,8 +190,7 @@ function init() {
 
 (function () {
   const headerItem = document.querySelectorAll('.header__item');
-  const headerLink = document.querySelectorAll('.header__link');
-  const dropDownContainers = document.querySelectorAll('.dropdown-container')
+  const headerLink = document.querySelectorAll('.header__link-text');
 
   headerLink.forEach(function (item) {
     item.addEventListener('click', function () {
@@ -208,7 +209,12 @@ function init() {
   function toggleVisibleDropdown(current) {
     const dropdownContainer = document.querySelector('#' + current)
     if (dropdownContainer.dataset.dropdown === current) {
-      dropdownContainer.classList.toggle('dropdown-container--active')
+      dropdownContainer.classList.toggle('dropdown-container--active');
+      document.addEventListener('click', (e) => {
+        if(!e.target.classList.contains('header__link-text')){
+          dropdownContainer.classList.remove('dropdown-container--active');          
+        }      
+      });
     }
   }
 }());
