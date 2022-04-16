@@ -1,6 +1,6 @@
 .hero__swiper {
   width: 100%;
-  height: 800px;
+  height: 100%;
 }
 .hero__swiper-slide {
   background: no-repeat cover;
@@ -110,6 +110,7 @@
   background: rgba(0, 0, 0, 0.5);
   opacity: 0;
   z-index: 1;
+  transition: all 0.2s linear;
 }
 .gallerey .swiper-slide__imgbox::before {
   content: "";
@@ -123,6 +124,7 @@
   opacity: 0;
   z-index: 3;
   cursor: pointer;
+  transition: all 0.2s linear;
 }
 .gallerey .swiper-slide__imgbox:hover::after,
 .gallerey .swiper-slide__imgbox:hover::before {

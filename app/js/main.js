@@ -187,38 +187,45 @@ function init() {
 }
 ////////////////////////////////
 /////dropdown-menu в шапке сайта//////////
-
-(function () {
-  const headerItem = document.querySelectorAll('.header__item');
-  const headerLink = document.querySelectorAll('.header__link-text');
-
-  headerLink.forEach(function (item) {
-    item.addEventListener('click', function () {
-      item.classList.toggle('active');
-    });
-  });
-
-  headerItem.forEach(function (item) {
-    item.addEventListener('click', function () {
-      const current = this.dataset.dropdown;
-      console.log('Клик по текущему элементу = ', this.dataset.dropdown);
-      toggleVisibleDropdown(current)
-    });
-  });
-
-  function toggleVisibleDropdown(current) {
-    const dropdownContainer = document.querySelector('#' + current)
-    if (dropdownContainer.dataset.dropdown === current) {
-      dropdownContainer.classList.toggle('dropdown-container--active');
-      document.addEventListener('click', (e) => {
-        if(!e.target.classList.contains('header__link-text')){
-          dropdownContainer.classList.remove('dropdown-container--active');          
-        }      
+const params = {
+  btnClassName: "js-header-dropdown-btn",
+  dropClassName: "js-header-drop",
+  activeClassName: "is-active",
+  disabledClassName: "is-disabled"
+}
+function onDisable(evt) {
+  if (evt.target.classList.contains(params.disabledClassName)) {
+    evt.target.classList.remove(params.disabledClassName, params.activeClassName);
+    evt.target.removeEventListener("animationend", onDisable);
+  }
+}
+function setMenuListener() {
+  document.body.addEventListener("click", (evt) => {
+    const activeElements = document.querySelectorAll(`.${params.btnClassName}.${params.activeClassName}, .${params.dropClassName}.${params.activeClassName}`);
+    if (activeElements.length && !evt.target.closest(`.${params.activeClassName}`)) {
+      activeElements.forEach((current) => {
+        if (current.classList.contains(params.btnClassName)) {
+          current.classList.remove(params.activeClassName);
+        } else {
+          current.classList.add(params.disabledClassName);
+        }
       });
     }
-  }
-}());
-
+    if (evt.target.closest(`.${params.btnClassName}`)) {
+      const btn = evt.target.closest(`.${params.btnClassName}`);
+      const path = btn.dataset.path;
+      const drop = document.querySelector(`.${params.dropClassName}[data-target="${path}"]`);
+      btn.classList.toggle(params.activeClassName);
+      if (!drop.classList.contains(params.activeClassName)) {
+        drop.classList.add(params.activeClassName);
+        drop.addEventListener("animationend", onDisable);
+      } else {
+        drop.classList.add(params.disabledClassName);
+      }
+    }
+  });
+}
+setMenuListener();
 ////////маска для телефона///////////////
 (function () {
   const maskTel = document.querySelector('.js-form__input');
@@ -270,5 +277,27 @@ function init() {
       this.classList.remove('active');
     });
   }
+}());
+
+///плавный скролл///
+(function(){
+  const anchoLinks = document.querySelectorAll('[data-anchor]');
+ anchoLinks.forEach((item)=>{
+   item.addEventListener('click',function(){
+     const currentLinks = this.dataset.anchor;   
+     const currentSecion = document.getElementById(`${currentLinks}`)
+     console.log(currentSecion);
+     scrollTo(currentSecion)    
+   });
+   
+   function scrollTo(currentSecion){
+     window.scroll({
+       left: 0,
+       top: currentSecion.offsetTop,
+       behavior: 'smooth'
+     })
+   };
+ });
+  
 }());
 
