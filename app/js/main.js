@@ -1,6 +1,6 @@
 
 //слайдер в hero секции
-const swiperHero = new Swiper('.js-hero__swiper', {
+const swiperHero = new Swiper('.js-hero-swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -11,7 +11,7 @@ const swiperHero = new Swiper('.js-hero__swiper', {
   effect: "fade"
 });
 //слайдер  галереи
-const swiperGallerey = new Swiper('.js-gallerey__swiper', {
+const swiperGallerey = new Swiper('.js-gallerey-swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -87,7 +87,7 @@ const swiperEvents = new Swiper('.events__swiper', {
   }
 });
 ////////слайдер в project///
-const swiperPartners = new Swiper('.js-project__partners', {
+const swiperPartners = new Swiper('.js-project-partners', {
   // Optional parameters
   direction: 'horizontal',
   slidesPerView: 3,
@@ -228,7 +228,7 @@ function setMenuListener() {
 setMenuListener();
 ////////маска для телефона///////////////
 (function () {
-  const maskTel = document.querySelector('.js-form__input');
+  const maskTel = document.querySelector('.js-form-input');
   const im = new Inputmask('+7 (999) 999-99-99');
   im.mask(maskTel)
 }());
@@ -251,13 +251,13 @@ setMenuListener();
   const mobileMenu = document.querySelector('.mobile-menu');
   const closeMenu = document.querySelector('.close');
   btnBurger.addEventListener('click', function () {
-    mobileMenu.classList.remove('mobile-menu__hidden')
+    mobileMenu.classList.remove('mobile-menu--hidden')
   });
   closeMenu.addEventListener('click', function () {
-    mobileMenu.classList.add('mobile-menu__hidden')
+    mobileMenu.classList.add('mobile-menu--hidden')
   });
   mobileMenu.addEventListener('click', function (e) {
-    this.classList.add('mobile-menu__hidden')
+    this.classList.add('mobile-menu--hidden')
   });
 }());
 ////////модальные окна в галереи///
@@ -280,24 +280,21 @@ setMenuListener();
 }());
 
 ///плавный скролл///
-(function(){
+(function () {
   const anchoLinks = document.querySelectorAll('[data-anchor]');
- anchoLinks.forEach((item)=>{
-   item.addEventListener('click',function(){
-     const currentLinks = this.dataset.anchor;   
-     const currentSecion = document.getElementById(`${currentLinks}`)
-     console.log(currentSecion);
-     scrollTo(currentSecion)    
-   });
-   
-   function scrollTo(currentSecion){
-     window.scroll({
-       left: 0,
-       top: currentSecion.offsetTop,
-       behavior: 'smooth'
-     })
-   };
- });
-  
+  anchoLinks.forEach((item) => {
+    item.addEventListener('click', function () {
+      const currentLinks = this.dataset.anchor;
+      const currentSecion = document.getElementById(`${currentLinks}`)
+      scrollTo(currentSecion)
+    });
+    function scrollTo(currentSecion) {
+      window.scroll({
+        left: 0,
+        top: currentSecion.offsetTop,
+        behavior: 'smooth'
+      })
+    };
+  });
 }());
 
