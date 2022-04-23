@@ -3,8 +3,9 @@
   height: 100%;
 }
 .hero__swiper-slide {
-  background: no-repeat cover;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .swiper.hero__swiper{
   animation-name: resize;

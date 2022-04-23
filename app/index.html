@@ -202,20 +202,20 @@
           </ul>
         </div>
         <div class="checkboxes" aria-label="Список чекбоксов выбора временни">
-          <label tabindex="0" aria-label="21й век">
-            <input type="checkbox" class="checkboxes__real-checkbox">
+          <label aria-label="21й век">
+            <input tabindex="0" type="checkbox" class="checkboxes__real-checkbox">
             <span class="checkboxes__custome-checkbox"></span>
-            XIX век
+            <span class="checkboxes__text">XIX век</span>
           </label>
-          <label tabindex="0" aria-label="20й век">
-            <input type="checkbox" class="checkboxes__real-checkbox">
+          <label aria-label="20й век">
+            <input tabindex="0" type="checkbox" class="checkboxes__real-checkbox">
             <span class="checkboxes__custome-checkbox"></span>
-            XX век
+            <span class="checkboxes__text">XX век</span>
           </label>
-          <label tabindex="0" aria-label="Современность">
-            <input type="checkbox" class="checkboxes__real-checkbox">
+          <label aria-label="Современность">
+            <input tabindex="0" type="checkbox" class="checkboxes__real-checkbox">
             <span class="checkboxes__custome-checkbox"></span>
-            Современность
+            <span class="checkboxes__text">Современность</span>
           </label>
         </div>
       </div>
@@ -271,256 +271,405 @@
 </section>
       <section class="catalog" id="catalog">
   <div class="container">
-    <h2 class="catalog__title">Каталог</h2>
+    <div class="catalog__top">
+      <h2 class="catalog__title">Каталог</h2>
+      <ul class="catalog__list">
+        <li class="catalog__item">
+          <button class="catalog__btn js-tab-btn" data-country-btn="France">
+            <img class="catalog__img-country" src="../img/france.png" alt="Франция">
+          </button>
+        </li>
+        <li class="catalog__item">
+          <button class="catalog__btn js-tab-btn" data-country-btn="German">
+            <img class="catalog__img-country" src="../img/german.png" alt="Германия">
+          </button>
+        </li>
+        <li class="catalog__item">
+          <button class="catalog__btn js-tab-btn" data-country-btn="Italy">
+            <img class="catalog__img-country" src="../img/italy.png" alt="Италия">
+          </button>
+        </li>
+        <li class="catalog__item">
+          <button class="catalog__btn js-tab-btn" data-country-btn="Russia">
+            <img class="catalog__img-country" src="../img/russia.png" alt="Россия">
+          </button>
+        </li>
+        <li class="catalog__item">
+          <button class="catalog__btn js-tab-btn" data-country-btn="Belgium">
+            <img class="catalog__img-country" src="../img/belgium.png" alt="Бельгия">
+          </button>
+        </li>
+      </ul>
+    </div>
     <p class="catalog__subtitle">Акционеры крупнейших компаний, которые представляют собой яркий пример
       континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и
       морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и
       по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы. </p>
     <div class="catalog__wrapper">
       <div class="catalog__left">
-        <img class="catalog__img" src="img/image3.jpg" alt="Картинка в каталоге">
-        <span class="catalog__img-title">Доменико Гирландайо</span>
-        <span class="catalog__img-age">2 июня 1448 — 11 января 1494</span>
-        <p class="catalog__img-descr">Один из ведущих флорентийских художников Кватроченто, основатель художественной
-          династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный
-          Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло,
-          со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные
-          граждане Флоренции в костюмах того времени).</p>
+        <div class="catalog__tab-content js-tab-content tab-active" data-country-content="France">
+          <img class="catalog__img" src="img/image3.jpg" alt="Картинка в каталоге">
+          <span class="catalog__img-title">Доменико Гирландайо</span>
+          <span class="catalog__img-age">2 июня 1448 — 11 января 1494</span>
+          <p class="catalog__img-descr">Один из ведущих флорентийских художников Кватроченто, основатель художественной
+            династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный
+            Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло,
+            со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные
+            граждане Флоренции в костюмах того времени).</p>
+        </div>
+        <div class="catalog__tab-content js-tab-content" data-country-content="German">
+          <img class="catalog__img" src="img/unknown-hudoznik.jpg" alt="Картинка в каталоге">
+          <span class="catalog__img-title">Что мы о нём знаем?</span>
+          <p class="catalog__img-descr catalog__img-descr--margin">Пока ничего... Зато мы точно знаем, что в галерее
+            есть на что посмотреть!</p>
+          <a href="#" class="catalog__link">В галерею</a>
+        </div>
+        <div class="catalog__tab-content js-tab-content" data-country-content="Italy">
+          <img class="catalog__img" src="img/unknown-hudoznik.jpg" alt="Картинка в каталоге">
+          <span class="catalog__img-title">Что мы о нём знаем?</span>
+          <p class="catalog__img-descr catalog__img-descr--margin">Пока ничего... Зато мы точно знаем, что в галерее
+            есть на что посмотреть!</p>
+          <a href="#" class="catalog__link">В галерею</a>
+        </div>
+        <div class="catalog__tab-content js-tab-content" data-country-content="Russia">
+          <img class="catalog__img" src="img/unknown-hudoznik.jpg" alt="Картинка в каталоге">
+          <span class="catalog__img-title">Что мы о нём знаем?</span>
+          <p class="catalog__img-descr catalog__img-descr--margin">Пока ничего... Зато мы точно знаем, что в галерее
+            есть на что посмотреть!</p>
+          <a href="#" class="catalog__link">В галерею</a>
+        </div>
+        <div class="catalog__tab-content js-tab-content" data-country-content="Belgium">
+          <img class="catalog__img" src="img/unknown-hudoznik.jpg" alt="Картинка в каталоге">
+          <span class="catalog__img-title">Что мы о нём знаем?</span>
+          <p class="catalog__img-descr catalog__img-descr--margin">Пока ничего... Зато мы точно знаем, что в галерее
+            есть на что посмотреть!</p>
+          <a href="#" class="catalog__link">В галерею</a>
+        </div>
       </div>
       <div class="catalog__right">
-        <div class="accordion">
-          <p class="accordion__title" data-name="accordion-title">C 1400 по 1499 гг.</p>
-          <div class="accordion__body accordion__body--hidden">
-            <ul class="accordion__list">
-              <li class="accordion__item"><a href="#" class="accordion__link">Бенедетто ди Биндо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бергоньоне, Амброджо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Биссоло, Франческо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Больтраффио, Джованни</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бонсиньори, Франческо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Боттичини, Рафаэлло</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Брамантино</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бреа, Людовико</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бьяджо д’Антонио Туччи</a></li>
-            </ul>
-            <ul class="accordion__list">
-              <li class="accordion__item"><a href="#" class="accordion__link">Бенедетто ди Биндо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бергоньоне, Амброджо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Биссоло, Франческо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Больтраффио, Джованни</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бонсиньори, Франческо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Боттичини, Рафаэлло</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Брамантино</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бреа, Людовико</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бьяджо д’Антонио Туччи</a></li>
-            </ul>
-            <ul class="accordion__list">
-              <li class="accordion__item"><a href="#" class="accordion__link">Бенедетто ди Биндо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бергоньоне, Амброджо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Биссоло, Франческо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Больтраффио, Джованни</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бонсиньори, Франческо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Боттичини, Рафаэлло</a></li>
-            </ul>
-          </div>
-          <p class="accordion__title" data-name="accordion-title">C 1500 по 1599 гг.</p>
-          <div class="accordion__body accordion__body--hidden">
-            <ul class="accordion__list">
-              <li class="accordion__item"><a href="#" class="accordion__link">Бенедетто ди Биндо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бергоньоне, Амброджо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Биссоло, Франческо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Больтраффио, Джованни</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бонсиньори, Франческо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Боттичини, Рафаэлло</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Брамантино</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бреа, Людовико</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бьяджо д’Антонио Туччи</a></li>
-            </ul>
-            <ul class="accordion__list">
-              <li class="accordion__item"><a href="#" class="accordion__link">Бенедетто ди Биндо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бергоньоне, Амброджо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Биссоло, Франческо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Больтраффио, Джованни</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бонсиньори, Франческо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Боттичини, Рафаэлло</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Брамантино</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бреа, Людовико</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бьяджо д’Антонио Туччи</a></li>
-            </ul>
-            <ul class="accordion__list">
-              <li class="accordion__item"><a href="#" class="accordion__link">Бенедетто ди Биндо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бергоньоне, Амброджо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Биссоло, Франческо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Больтраффио, Джованни</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бонсиньори, Франческо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Боттичини, Рафаэлло</a></li>
-            </ul>
-          </div>
-          <p class="accordion__title" data-name="accordion-title">C 1600 по 1699 гг.</p>
-          <div class="accordion__body accordion__body--hidden">
-            <ul class="accordion__list">
-              <li class="accordion__item"><a href="#" class="accordion__link">Бенедетто ди Биндо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бергоньоне, Амброджо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Биссоло, Франческо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Больтраффио, Джованни</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бонсиньори, Франческо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Боттичини, Рафаэлло</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Брамантино</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бреа, Людовико</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бьяджо д’Антонио Туччи</a></li>
-            </ul>
-            <ul class="accordion__list">
-              <li class="accordion__item"><a href="#" class="accordion__link">Бенедетто ди Биндо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бергоньоне, Амброджо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Биссоло, Франческо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Больтраффио, Джованни</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бонсиньори, Франческо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Боттичини, Рафаэлло</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Брамантино</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бреа, Людовико</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бьяджо д’Антонио Туччи</a></li>
-            </ul>
-            <ul class="accordion__list">
-              <li class="accordion__item"><a href="#" class="accordion__link">Бенедетто ди Биндо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бергоньоне, Амброджо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Биссоло, Франческо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Больтраффио, Джованни</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бонсиньори, Франческо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Боттичини, Рафаэлло</a></li>
-            </ul>
-          </div>
-          <p class="accordion__title" data-name="accordion-title">C 1700 по 1799 гг.</p>
-          <div class="accordion__body accordion__body--hidden">
-            <ul class="accordion__list">
-              <li class="accordion__item"><a href="#" class="accordion__link">Бенедетто ди Биндо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бергоньоне, Амброджо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Биссоло, Франческо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Больтраффио, Джованни</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бонсиньори, Франческо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Боттичини, Рафаэлло</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Брамантино</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бреа, Людовико</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бьяджо д’Антонио Туччи</a></li>
-            </ul>
-            <ul class="accordion__list">
-              <li class="accordion__item"><a href="#" class="accordion__link">Бенедетто ди Биндо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бергоньоне, Амброджо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Биссоло, Франческо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Больтраффио, Джованни</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бонсиньори, Франческо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Боттичини, Рафаэлло</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Брамантино</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бреа, Людовико</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бьяджо д’Антонио Туччи</a></li>
-            </ul>
-            <ul class="accordion__list">
-              <li class="accordion__item"><a href="#" class="accordion__link">Бенедетто ди Биндо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бергоньоне, Амброджо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Биссоло, Франческо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Больтраффио, Джованни</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бонсиньори, Франческо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Боттичини, Рафаэлло</a></li>
-            </ul>
-          </div>
-          <p class="accordion__title" data-name="accordion-title">C 1800 по 1899 гг.</p>
-          <div class="accordion__body accordion__body--hidden">
-            <ul class="accordion__list">
-              <li class="accordion__item"><a href="#" class="accordion__link">Бенедетто ди Биндо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бергоньоне, Амброджо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Биссоло, Франческо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Больтраффио, Джованни</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бонсиньори, Франческо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Боттичини, Рафаэлло</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Брамантино</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бреа, Людовико</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бьяджо д’Антонио Туччи</a></li>
-            </ul>
-            <ul class="accordion__list">
-              <li class="accordion__item"><a href="#" class="accordion__link">Бенедетто ди Биндо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бергоньоне, Амброджо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Биссоло, Франческо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Больтраффио, Джованни</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бонсиньори, Франческо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Боттичини, Рафаэлло</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Брамантино</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бреа, Людовико</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бьяджо д’Антонио Туччи</a></li>
-            </ul>
-            <ul class="accordion__list">
-              <li class="accordion__item"><a href="#" class="accordion__link">Бенедетто ди Биндо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бергоньоне, Амброджо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Биссоло, Франческо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Больтраффио, Джованни</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бонсиньори, Франческо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Боттичини, Рафаэлло</a></li>
-            </ul>
-          </div>
-          <p class="accordion__title" data-name="accordion-title">C 1900 по 1999 гг.</p>
-          <div class="accordion__body accordion__body--hidden">
-            <ul class="accordion__list">
-              <li class="accordion__item"><a href="#" class="accordion__link">Бенедетто ди Биндо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бергоньоне, Амброджо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Биссоло, Франческо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Больтраффио, Джованни</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бонсиньори, Франческо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Боттичини, Рафаэлло</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Брамантино</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бреа, Людовико</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бьяджо д’Антонио Туччи</a></li>
-            </ul>
-            <ul class="accordion__list">
-              <li class="accordion__item"><a href="#" class="accordion__link">Бенедетто ди Биндо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бергоньоне, Амброджо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Биссоло, Франческо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Больтраффио, Джованни</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бонсиньори, Франческо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Боттичини, Рафаэлло</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Брамантино</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бреа, Людовико</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бьяджо д’Антонио Туччи</a></li>
-            </ul>
-            <ul class="accordion__list">
-              <li class="accordion__item"><a href="#" class="accordion__link">Бенедетто ди Биндо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бергоньоне, Амброджо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Биссоло, Франческо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Больтраффио, Джованни</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бонсиньори, Франческо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Боттичини, Рафаэлло</a></li>
-            </ul>
-          </div>
-          <p class="accordion__title" data-name="accordion-title">C 2000 г.</p>
-          <div class="accordion__body accordion__body--hidden">
-            <ul class="accordion__list">
-              <li class="accordion__item"><a href="#" class="accordion__link">Бенедетто ди Биндо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бергоньоне, Амброджо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Биссоло, Франческо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Больтраффио, Джованни</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бонсиньори, Франческо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Боттичини, Рафаэлло</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Брамантино</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бреа, Людовико</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бьяджо д’Антонио Туччи</a></li>
-            </ul>
-            <ul class="accordion__list">
-              <li class="accordion__item"><a href="#" class="accordion__link">Бенедетто ди Биндо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бергоньоне, Амброджо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Биссоло, Франческо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Больтраффио, Джованни</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бонсиньори, Франческо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Боттичини, Рафаэлло</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Брамантино</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бреа, Людовико</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бьяджо д’Антонио Туччи</a></li>
-            </ul>
-            <ul class="accordion__list">
-              <li class="accordion__item"><a href="#" class="accordion__link">Бенедетто ди Биндо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бергоньоне, Амброджо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Биссоло, Франческо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Больтраффио, Джованни</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Бонсиньори, Франческо</a></li>
-              <li class="accordion__item"><a href="#" class="accordion__link">Боттичини, Рафаэлло</a></li>
-            </ul>
-          </div>
-        </div>
+        <ul class="accordion reset-list js-accordion-container">
+          <li class="accordion__question ac js-enabled">
+            <button class="accordion__heading ac-trigger">
+              <span class="accordion__heading-text">
+                <span class="accordion__heading-text-wrap">C 1400 по 1499 гг.</span>
+              </span>
+              <svg class="head-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path class="head-icon-round"
+                  d="M49 25C49 11.7452 38.2548 1.00001 25 1.00001C11.7452 1.00001 1 11.7452 1 25C1 38.2548 11.7452 49 25 49C38.2548 49 49 38.2548 49 25Z"
+                  fill="#ECECEC" stroke="#ECECEC" stroke-width="2" />
+                <path d="M33.3333 26.6667L25 18.3333L16.6667 26.6667" stroke="black" />
+              </svg>
+            </button>
+
+            <div class="accordion__content ac-panel">
+              <div class="accordion__content-wrap">
+                <ul class="accordion__inner-list reset-list">
+                  <li class="accordion__item">
+                    <a class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                      data-painter-btn="empty" href="#">
+                      <span class="link__text">Бенедетто ди Биндо</span>
+                    </a>
+                  </li>
+                  <li class="accordion__item">
+                    <a class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                      data-painter-btn="empty" href="#">
+                      <span class="link__text">Веккьетта</span>
+                    </a>
+                  </li>
+                  <li class="accordion__item">
+                    <a class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                      data-painter-btn="empty" href="#">
+                      <span class="link__text">Парентино, Бернардо</span>
+                    </a>
+                  </li>
+                  <li class="accordion__item">
+                    <a class="accordion__painter-link link link--text link--text-another js-tab-btn tab-active"
+                      data-painter-btn="domenico" href="#">
+                      <span class="link__text">Доменико Гирландайо</span>
+                    </a>
+                  </li>
+                  <li class="accordion__item">
+                    <a class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                      data-painter-btn="empty" href="#">
+                      <span class="link__text">Бенедетто ди Биндо</span>
+                    </a>
+                  </li>
+                  <li class="accordion__item">
+                    <a class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                      data-painter-btn="empty" href="#">
+                      <span class="link__text">Веккьетта</span>
+                    </a>
+                  </li>
+                  <li class="accordion__item">
+                    <a class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                      data-painter-btn="empty" href="#">
+                      <span class="link__text">Парентино, Бернардо</span>
+                    </a>
+                  </li>
+                  <li class="accordion__item">
+                    <a class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                      data-painter-btn="domenico" href="#">
+                      <span class="link__text">Доменико Гирландайо</span>
+                    </a>
+                  </li>
+                  <li class="accordion__item">
+                    <a class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                      data-painter-btn="empty" href="#">
+                      <span class="link__text">Бенедетто ди Биндо</span>
+                    </a>
+                  </li>
+                  <li class="accordion__item">
+                    <a class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                      data-painter-btn="empty" href="#">
+                      <span class="link__text">Веккьетта</span>
+                    </a>
+                  </li>
+                  <li class="accordion__item">
+                    <a class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                      data-painter-btn="empty" href="#">
+                      <span class="link__text">Парентино, Бернардо</span>
+                    </a>
+                  </li>
+                  <li class="accordion__item">
+                    <a class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                      data-painter-btn="domenico" href="#">
+                      <span class="link__text">Доменико Гирландайо</span>
+                    </a>
+                  </li>
+                  <li class="accordion__item">
+                    <a class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                      data-painter-btn="empty" href="#">
+                      <span class="link__text">Бенедетто ди Биндо</span>
+                    </a>
+                  </li>
+                  <li class="accordion__item">
+                    <a class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                      data-painter-btn="empty" href="#">
+                      <span class="link__text">Веккьетта</span>
+                    </a>
+                  </li>
+                  <li class="accordion__item">
+                    <a class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                      data-painter-btn="empty" href="#">
+                      <span class="link__text">Парентино, Бернардо</span>
+                    </a>
+                  </li>
+                  <li class="accordion__item">
+                    <a class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                      data-painter-btn="domenico" href="#">
+                      <span class="link__text">Доменико Гирландайо</span>
+                    </a>
+                  </li>
+                  <li class="accordion__item">
+                    <a class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                      data-painter-btn="empty" href="#">
+                      <span class="link__text">Бенедетто ди Биндо</span>
+                    </a>
+                  </li>
+                  <li class="accordion__item">
+                    <a class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                      data-painter-btn="empty" href="#">
+                      <span class="link__text">Веккьетта</span>
+                    </a>
+                  </li>
+                  <li class="accordion__item">
+                    <a class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                      data-painter-btn="empty" href="#">
+                      <span class="link__text">Парентино, Бернардо</span>
+                    </a>
+                  </li>
+                  <li class="accordion__item">
+                    <a class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                      data-painter-btn="domenico" href="#">
+                      <span class="link__text">Доменико Гирландайо</span>
+                    </a>
+                  </li>
+                  <li class="accordion__item">
+                    <a class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                      data-painter-btn="empty" href="#">
+                      <span class="link__text">Бенедетто ди Биндо</span>
+                    </a>
+                  </li>
+                  <li class="accordion__item">
+                    <a class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                      data-painter-btn="empty" href="#">
+                      <span class="link__text">Веккьетта</span>
+                    </a>
+                  </li>
+                  <li class="accordion__item">
+                    <a class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                      data-painter-btn="empty" href="#">
+                      <span class="link__text">Парентино, Бернардо</span>
+                    </a>
+                  </li>
+                  <li class="accordion__item">
+                    <a class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                      data-painter-btn="domenico" href="#">
+                      <span class="link__text">Доменико Гирландайо</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="accordion__question ac js-enabled">
+            <button class="accordion__heading ac-trigger">
+              <span class="accordion__heading-text">
+                <span class="accordion__heading-text-wrap">C 1500 по 1599 гг.</span>
+              </span>
+              <svg class="head-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path class="head-icon-round"
+                  d="M49 25C49 11.7452 38.2548 1.00001 25 1.00001C11.7452 1.00001 1 11.7452 1 25C1 38.2548 11.7452 49 25 49C38.2548 49 49 38.2548 49 25Z"
+                  fill="#ECECEC" stroke="#ECECEC" stroke-width="2" />
+                <path d="M33.3333 26.6667L25 18.3333L16.6667 26.6667" stroke="black" />
+              </svg>
+            </button>
+
+            <div class="accordion__content ac-panel">
+              <div class="accordion__content-wrap">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum
+                  doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa
+                  molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus. Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe
+                  corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis
+                  explicabo ipsam eveniet voluptas atque accusamus.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="accordion__question ac js-enabled">
+            <button class="accordion__heading ac-trigger">
+              <span class="accordion__heading-text">
+                <span class="accordion__heading-text-wrap">C 1600 по 1699 гг.</span>
+              </span>
+              <svg class="head-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path class="head-icon-round"
+                  d="M49 25C49 11.7452 38.2548 1.00001 25 1.00001C11.7452 1.00001 1 11.7452 1 25C1 38.2548 11.7452 49 25 49C38.2548 49 49 38.2548 49 25Z"
+                  fill="#ECECEC" stroke="#ECECEC" stroke-width="2" />
+                <path d="M33.3333 26.6667L25 18.3333L16.6667 26.6667" stroke="black" />
+              </svg>
+            </button>
+
+            <div class="accordion__content ac-panel">
+              <div class="accordion__content-wrap">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum
+                  doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa
+                  molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus. Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe
+                  corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis
+                  explicabo ipsam eveniet voluptas atque accusamus.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="accordion__question ac js-enabled">
+            <button class="accordion__heading ac-trigger">
+              <span class="accordion__heading-text">
+                <span class="accordion__heading-text-wrap">C 1600 по 1699 гг.</span>
+              </span>
+              <svg class="head-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path class="head-icon-round"
+                  d="M49 25C49 11.7452 38.2548 1.00001 25 1.00001C11.7452 1.00001 1 11.7452 1 25C1 38.2548 11.7452 49 25 49C38.2548 49 49 38.2548 49 25Z"
+                  fill="#ECECEC" stroke="#ECECEC" stroke-width="2" />
+                <path d="M33.3333 26.6667L25 18.3333L16.6667 26.6667" stroke="black" />
+              </svg>
+            </button>
+
+            <div class="accordion__content ac-panel">
+              <div class="accordion__content-wrap">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum
+                  doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa
+                  molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus. Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe
+                  corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis
+                  explicabo ipsam eveniet voluptas atque accusamus.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="accordion__question ac js-enabled">
+            <button class="accordion__heading ac-trigger">
+              <span class="accordion__heading-text">
+                <span class="accordion__heading-text-wrap">C 1600 по 1699 гг.</span>
+              </span>
+              <svg class="head-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path class="head-icon-round"
+                  d="M49 25C49 11.7452 38.2548 1.00001 25 1.00001C11.7452 1.00001 1 11.7452 1 25C1 38.2548 11.7452 49 25 49C38.2548 49 49 38.2548 49 25Z"
+                  fill="#ECECEC" stroke="#ECECEC" stroke-width="2" />
+                <path d="M33.3333 26.6667L25 18.3333L16.6667 26.6667" stroke="black" />
+              </svg>
+            </button>
+
+            <div class="accordion__content ac-panel">
+              <div class="accordion__content-wrap">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum
+                  doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa
+                  molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus. Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe
+                  corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis
+                  explicabo ipsam eveniet voluptas atque accusamus.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="accordion__question ac js-enabled">
+            <button class="accordion__heading ac-trigger">
+              <span class="accordion__heading-text">
+                <span class="accordion__heading-text-wrap">C 1600 по 1699 гг.</span>
+              </span>
+              <svg class="head-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path class="head-icon-round"
+                  d="M49 25C49 11.7452 38.2548 1.00001 25 1.00001C11.7452 1.00001 1 11.7452 1 25C1 38.2548 11.7452 49 25 49C38.2548 49 49 38.2548 49 25Z"
+                  fill="#ECECEC" stroke="#ECECEC" stroke-width="2" />
+                <path d="M33.3333 26.6667L25 18.3333L16.6667 26.6667" stroke="black" />
+              </svg>
+            </button>
+
+            <div class="accordion__content ac-panel">
+              <div class="accordion__content-wrap">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum
+                  doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa
+                  molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus. Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe
+                  corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis
+                  explicabo ipsam eveniet voluptas atque accusamus.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="accordion__question ac js-enabled">
+            <button class="accordion__heading ac-trigger">
+              <span class="accordion__heading-text">
+                <span class="accordion__heading-text-wrap">C 1600 по 1699 гг.</span>
+              </span>
+              <svg class="head-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path class="head-icon-round"
+                  d="M49 25C49 11.7452 38.2548 1.00001 25 1.00001C11.7452 1.00001 1 11.7452 1 25C1 38.2548 11.7452 49 25 49C38.2548 49 49 38.2548 49 25Z"
+                  fill="#ECECEC" stroke="#ECECEC" stroke-width="2" />
+                <path d="M33.3333 26.6667L25 18.3333L16.6667 26.6667" stroke="black" />
+              </svg>
+            </button>
+
+            <div class="accordion__content ac-panel">
+              <div class="accordion__content-wrap">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum
+                  doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa
+                  molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus. Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe
+                  corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis
+                  explicabo ipsam eveniet voluptas atque accusamus.</p>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
@@ -812,6 +961,7 @@
   <script src="./swiper/swiper.min.js"></script>
   <script src="./formMask/inputmask.min.js"></script>
   <script src="./formValidate/just-validate.min.js"></script>
+  <script src="./js/accordion.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 

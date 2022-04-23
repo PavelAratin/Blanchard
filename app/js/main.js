@@ -14,7 +14,6 @@ const swiperHero = new Swiper('.js-hero-swiper', {
 const swiperGallerey = new Swiper('.js-gallerey-swiper', {
   // Optional parameters
   direction: 'horizontal',
-  loop: true,
   slidesPerView: 3,
   spaceBetween: 30,
   // Navigation arrows
@@ -27,17 +26,14 @@ const swiperGallerey = new Swiper('.js-gallerey-swiper', {
     type: 'fraction',
   },
   breakpoints: {
-    // when window width is >= 320px
     320: {
       slidesPerView: 1,
       spaceBetween: 10
     },
-    // when window width is >= 480px
     767: {
       slidesPerView: 2,
       spaceBetween: 10
     },
-    // when window width is >= 640px
     1024: {
       slidesPerView: 2,
       spaceBetween: 10
@@ -64,21 +60,17 @@ const swiperEvents = new Swiper('.events__swiper', {
     el: '.swiper-pagination',
   },
   breakpoints: {
-    // when window width is >= 320px
     320: {
       slidesPerView: 1,
       spaceBetween: 10
     },
-    // when window width is >= 480px
     767: {
       slidesPerView: 2,
       spaceBetween: 10
     },
-    // when window width is >= 640px
     1024: {
       slidesPerView: 2,
       spaceBetween: 30,
-      // If we need pagination
     },
     1345: {
       slidesPerView: 3,
@@ -99,21 +91,17 @@ const swiperPartners = new Swiper('.js-project-partners', {
     prevEl: '.js-swiper-button-next2',
   },
   breakpoints: {
-    // when window width is >= 320px
     320: {
       slidesPerView: 1,
       spaceBetween: 10
     },
-    // when window width is >= 480px
     767: {
       slidesPerView: 2,
       spaceBetween: 10
     },
-    // when window width is >= 640px
     1024: {
       slidesPerView: 2,
       spaceBetween: 30,
-      // If we need pagination
     },
     1345: {
       slidesPerView: 3,
@@ -126,12 +114,14 @@ const swiperPartners = new Swiper('.js-project-partners', {
   const gallereyBtn = document.querySelector('.gallerey__button');
   const gallereyDropListItem = document.querySelectorAll('.gallerey__dropdown-item');
   gallereyBtn.addEventListener('click', function () {
+    this.classList.toggle('active');
     document.querySelector('.gallerey__dropdown-list').classList.toggle('gallerey__dropdown-list--hidden')
   })
   gallereyDropListItem.forEach(function (item) {
     item.addEventListener('click', function (e) {
       e.stopPropagation()
       gallereyBtn.innerText = this.innerText;
+      gallereyBtn.classList.remove('active')
       document.querySelector('.gallerey__dropdown-list').classList.add('gallerey__dropdown-list--hidden');
     });
   });
@@ -142,6 +132,31 @@ const swiperPartners = new Swiper('.js-project-partners', {
     }
   })
 }());
+/////табы в каталоге///////////
+(() => {
+  function setTabs(dataPath, dataTarget) {
+    const btns = document.querySelectorAll(`.js-tab-btn[${dataPath}]`);
+    const contents = document.querySelectorAll(`.js-tab-content[${dataTarget}]`);
+    btns.forEach((btn) => {
+      btn.addEventListener('click', function (evt) {
+        const path = this.getAttribute(dataPath);
+        console.log(path);
+        const target = document.querySelector(`.js-tab-content[${dataTarget}="${path}"]`);
+        btns.forEach((currentBtn) => {
+          currentBtn.classList.remove('tab-active');
+        });
+        this.classList.add('tab-active');
+        contents.forEach((content) => {
+          content.classList.remove('tab-active');
+        });
+        target.classList.add('tab-active');
+      });
+    });
+  }
+  setTabs('data-country-btn', 'data-country-content'); // в аргументах функции передаем индивидуальные data атрибуты, которые установлены в разметке для кнопок и вкладок
+  setTabs('data-painters-path', 'data-painters-target');
+  setTabs('data-other-painters-path', 'data-other-painters-target');
+})();
 /////////////accordion в каталоге////////////////
 (function () {
   const accordionTitles = document.querySelectorAll('[data-name="accordion-title"]');
@@ -296,5 +311,14 @@ setMenuListener();
       })
     };
   });
+}());
+
+////инициализация аккордиона///////////
+(function(){
+  (() => {
+    new Accordion(".js-accordion-container", {
+      openOnInit: [0]
+    });
+  })();
 }());
 
