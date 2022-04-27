@@ -48,7 +48,6 @@ const swiperGallerey = new Swiper('.js-gallerey-swiper', {
 const swiperEvents = new Swiper('.events__swiper', {
   // Optional parameters
   direction: 'horizontal',
-  loop: true,
   slidesPerView: 3,
   spaceBetween: 50,
   // Navigation arrows
@@ -84,7 +83,6 @@ const swiperPartners = new Swiper('.js-project-partners', {
   direction: 'horizontal',
   slidesPerView: 3,
   spaceBetween: 50,
-  loop: true,
   // Navigation arrows
   navigation: {
     nextEl: '.js-swiper-button-prev2',
@@ -243,7 +241,7 @@ function setMenuListener() {
 setMenuListener();
 ////////маска для телефона///////////////
 (function () {
-  const maskTel = document.querySelector('.js-form-input');
+  const maskTel = document.querySelector('.js-form-tel');
   const im = new Inputmask('+7 (999) 999-99-99');
   im.mask(maskTel)
 }());
@@ -257,7 +255,7 @@ setMenuListener();
       }
     })
   };
-  validateForms('.form', { email: { required: true, email: true }, fio: { required: true }, tel: { required: true } });
+  validateForms('.form', { email: { required: true, email: true }, fio: { required: true, }, tel: { required: true } });
 }());
 
 ///////мобильное меню////////
@@ -284,11 +282,13 @@ setMenuListener();
       const currentBtn = this.closest('[data-modal]').dataset.modal;
       const modal = document.querySelector('#' + currentBtn);
       modal.classList.add('active');
+      document.querySelector('body').style.overflow = 'hidden';
       closeModal(modal)
     });
   });
   function closeModal(modal) {
     modal.addEventListener('click', function () {
+      document.querySelector('body').style.overflow = 'auto';
       this.classList.remove('active');
     });
   }
@@ -314,7 +314,7 @@ setMenuListener();
 }());
 
 ////инициализация аккордиона///////////
-(function(){
+(function () {
   (() => {
     new Accordion(".js-accordion-container", {
       openOnInit: [0]

@@ -63,7 +63,7 @@
 .gallerey-swiper-wrapper .swiper-button-next::before{
   content: '';
   position: absolute;
-  border: 2px solid #000000;
+  border: 2px solid #9D5CD0;
   border-radius: 100px;
   width: 95%;
   height: 95%;
@@ -141,9 +141,19 @@
   background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4));
   z-index: 5;
   opacity: 0;
+  outline: none;
+}
+.gallerey .swiper-slide__imgbox-overlay:focus{
+  border: 3px solid #7943A4;
+  background: transparent;
+  opacity: 1;
 }
 .gallerey .swiper-slide__imgbox:active .swiper-slide__imgbox-overlay{
+  border: 2px solid #D1A9F0;
   opacity: 1;
+}
+.gallerey .swiper-slide:focus{
+  border: 2px solid red;
 }
 
 
@@ -160,7 +170,7 @@
 .events__swiper-container .swiper-button-next::before{
   content: '';
   position: absolute;
-  border: 2px solid #000000;
+  border: 2px solid #9D5CD0;
   border-radius: 100px;
   width: 95%;
   height: 95%;
@@ -211,10 +221,10 @@
 .partners .swiper-button-next::before{
   content: '';
   position: absolute;
-  border: 2px solid #000000;
+  border: 2px solid #9D5CD0;
   border-radius: 100px;
-  width: 95%;
-  height: 95%;
+  width: 85%;
+  height: 85%;
   opacity: 0;
   transition: opacity 0.2s linear;
 }
@@ -224,25 +234,45 @@
 }
 .partners .swiper-button-prev {
   background-image: url("../img/arrow-slider-prev-svg-nostroke.svg");
-  top: 50%;
+  top: 48%;
   left: 0;
 }
 .partners .swiper-button-prev:hover{
-  background-image: url('../img/swiper-arrow-prev-hover.svg');
+  background-image: url('../img/swiper-partners-arrow-prev-hover.png');
 }
 .partners .swiper-button-next {
   background-image: url("../img/arrow-slider-next-svg-nostroke.svg");
-  top: 50%;
+  top: 48%;
   right: 0;
 }
 .partners .swiper-button-next:hover{
-  background-image: url('../img/swiper-arrow-next-hover.svg');
+  background-image: url('../img/swiper-partners-arrow-hover.png');
 }
 
 .partners .swiper-button-prev:after,
 .partners .swiper-button-next:after {
   display: none;
 }
+.partners .swiper-slide{
+  outline: none;
+  transition: all 0.2s linear;
+  position: relative;
+}
+.partners .swiper-slide:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 1px solid #9D5CD0;
+  opacity: 0;
+  pointer-events: none;
+}
+.partners .swiper-slide:focus:after{
+  opacity: 1;
+}
+
 .project__partners .swiper {
   max-width: 1450px;
 }
