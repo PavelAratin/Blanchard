@@ -137,8 +137,8 @@ const swiperPartners = new Swiper('.js-project-partners', {
     const contents = document.querySelectorAll(`.js-tab-content[${dataTarget}]`);
     btns.forEach((btn) => {
       btn.addEventListener('click', function (evt) {
+        evt.preventDefault();
         const path = this.getAttribute(dataPath);
-        console.log(path);
         const target = document.querySelector(`.js-tab-content[${dataTarget}="${path}"]`);
         btns.forEach((currentBtn) => {
           currentBtn.classList.remove('tab-active');
@@ -247,15 +247,20 @@ setMenuListener();
 }());
 ///////////валидация формы///////////
 (function () {
-  function validateForms(selector, rules) {
+  function validateForms(selector, rules, messages) {
     new window.JustValidate(selector, {
+      colorWrong: '#D11616',
       rules: rules,
+      messages: messages,
       submitHandler: function (form, values, ajax) {
         console.log(form);
       }
     })
   };
-  validateForms('.form', { email: { required: true, email: true }, fio: { required: true, }, tel: { required: true } });
+  validateForms('.form',
+    { fio: { required: true }, tel: { required: true } },
+    { fio: 'Введите свое имя', tel: 'Укажите свой телефон' }
+  );
 }());
 
 ///////мобильное меню////////

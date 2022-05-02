@@ -734,9 +734,6 @@ body {
 .checkboxes__real-checkbox:checked + .checkboxes__custome-checkbox {
   border-color: #c283f3;
 }
-.checkboxes__real-checkbox:focus + .checkboxes__custome-checkbox:before {
-  transform: translate(-50%, -50%) scale(1);
-}
 .checkboxes__real-checkbox:focus ~ .checkboxes__custome-checkbox {
   border-color: #c283f3;
 }
@@ -1020,15 +1017,75 @@ label:focus > .checkboxes__custome-checkbox {
   margin-top: -1px;
   border-bottom: 1px solid transparent;
 }
+.accordion__content-wrap {
+  padding-top: 26px;
+  padding-bottom: 26px;
+  display: flex;
+  align-items: center;
+}
+.accordion__content-wrap picture {
+  margin-right: 24px;
+}
+.accordion__content-wrap img {
+  width: 100%;
+  max-width: 275px;
+  height: auto;
+}
+.accordion__content-text-content span {
+  display: block;
+}
+.accordion__content-title {
+  color: #333333;
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 7px;
+}
+.accordion__content-subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  max-width: 275px;
+  margin-bottom: 5px;
+}
+.accordion__content-link-gallerey {
+  color: #9D5CD0;
+  font-weight: 600;
+  font-size: 16px;
+  position: relative;
+  outline: none;
+  display: inline-block;
+}
+.accordion__content-link-gallerey:after {
+  content: "";
+  position: absolute;
+  left: -6px;
+  right: -6px;
+  top: -6px;
+  bottom: -6px;
+  background: #9D5CD0;
+  transform: scale(0);
+  transition: transform 0.2s linear;
+}
+.accordion__content-link-gallerey:hover {
+  text-decoration: underline;
+}
+.accordion__content-link-gallerey:active {
+  text-decoration: underline;
+  color: #7943A4;
+}
+.accordion__content-link-gallerey:focus {
+  color: #ffffff;
+}
+.accordion__content-link-gallerey:focus:after {
+  transform: scale(1);
+}
+.accordion__content-link-gallerey-text {
+  position: relative;
+  z-index: 1;
+}
 
 .is-active .accordion__content {
   visibility: visible;
   border-color: #CACACA;
-}
-
-.accordion__content-wrap {
-  padding-top: 26px;
-  padding-bottom: 26px;
 }
 
 .accordion .text {
@@ -1190,7 +1247,7 @@ label:focus > .checkboxes__custome-checkbox {
   font-weight: 400;
   font-size: 48px;
   color: #333333;
-  margin-bottom: 21px;
+  margin-bottom: 22px;
 }
 .events__img {
   width: 100%;
@@ -1198,7 +1255,7 @@ label:focus > .checkboxes__custome-checkbox {
   display: block;
 }
 .events__wrapper {
-  padding: 13px 0px 42px 51px;
+  padding: 13px 0px 42px 49px;
   border-right: 1px solid #999999;
   border-bottom: 1px solid #999999;
   border-left: 1px solid #999999;
@@ -1214,7 +1271,7 @@ label:focus > .checkboxes__custome-checkbox {
   line-height: 1.3;
   color: #999999;
   width: 145px;
-  margin-bottom: 13px;
+  margin-bottom: 15px;
 }
 .events__subtitle {
   margin: 0;
@@ -1223,8 +1280,13 @@ label:focus > .checkboxes__custome-checkbox {
   line-height: 1.35;
   color: #333333;
   max-width: 350px;
-  letter-spacing: 0.6px;
   margin-bottom: 4px;
+}
+.events__subtitle--two {
+  margin-bottom: 10px;
+}
+.events__subtitle--three {
+  margin-bottom: 10px;
 }
 .events__descr {
   margin: 0;
@@ -1234,6 +1296,9 @@ label:focus > .checkboxes__custome-checkbox {
   color: #333333;
   max-width: 379px;
   margin-bottom: 20px;
+}
+.events__descr--width {
+  max-width: 400px;
 }
 .events__descr:last-of-type {
   margin-bottom: 20px;
@@ -1285,6 +1350,9 @@ label:focus > .checkboxes__custome-checkbox {
 .events .swiper-pagination-bullet-active {
   background-color: #666666;
 }
+.events .swiper-button-disabled {
+  display: none;
+}
 
 .project__title {
   font-weight: 400;
@@ -1296,17 +1364,23 @@ label:focus > .checkboxes__custome-checkbox {
   margin: 0;
   font-weight: 400;
   font-size: 16px;
-  line-height: 32px;
+  line-height: 2;
   max-width: 1064px;
   margin-bottom: 22px;
 }
 .project__tultip {
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  border: none;
+  background: transparent;
   display: inline-block;
   width: 16px;
   height: 16px;
   background: url("../img/tultip.svg") no-repeat center;
   vertical-align: middle;
   position: relative;
+  transition: all 0.2s linear;
 }
 .project__tultip:after {
   content: attr(data-text);
@@ -1314,7 +1388,7 @@ label:focus > .checkboxes__custome-checkbox {
   left: 50%;
   transform: translateX(-50%);
   width: 350px;
-  top: -355%;
+  top: -400%;
   padding: 10px;
   background: #9D5CD0;
   color: #ffffff;
@@ -1329,7 +1403,8 @@ label:focus > .checkboxes__custome-checkbox {
 .project__tultip:before {
   content: "";
   position: absolute;
-  top: -50%;
+  top: -85%;
+  right: 0.5px;
   width: 0;
   height: 0;
   border-style: solid;
@@ -1344,7 +1419,17 @@ label:focus > .checkboxes__custome-checkbox {
   visibility: visible;
 }
 .project__tultip--value::after {
-  top: -270%;
+  top: -300%;
+}
+.project__tultip:hover {
+  background-image: url("../img/tultip-hover.png");
+}
+.project__tultip:focus:after, .project__tultip:focus:before {
+  opacity: 1;
+  visibility: visible;
+}
+.project__tultip:focus {
+  background-image: url("../img/tultip-hover.png");
 }
 .project__link {
   color: #9D5CD0;
@@ -1374,7 +1459,7 @@ label:focus > .checkboxes__custome-checkbox {
 }
 
 .partners {
-  padding-bottom: 82px;
+  padding-bottom: 78px;
 }
 .partners__title {
   font-weight: 600;
@@ -1382,90 +1467,29 @@ label:focus > .checkboxes__custome-checkbox {
   color: #333333;
   margin-bottom: 26px;
 }
-.partners__img-box {
-  width: 100%;
-  height: 150px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  cursor: pointer;
-  transition: background 0.2s linear;
+.partners__link {
+  display: block;
   outline: none;
+  position: relative;
+  transition: all 0.2s linear;
+  border: 1px solid transparent;
 }
-.partners__img-box--1 {
-  background-image: url("../img/partners-img1.png");
+.partners__link:focus, .partners__link:active {
+  border-color: #9D5CD0;
 }
-.partners__img-box--1:hover {
-  background-image: url("../img/partners-img1color.png");
+.partners__img {
+  display: block;
+  filter: grayscale(100%);
+  transition: all 0.2s linear;
+  width: 100%;
 }
-.partners__img-box--2 {
-  background-image: url("../img/partners-img2.png");
-}
-.partners__img-box--2:hover {
-  background-image: url("../img/partners-img2color.png");
-}
-.partners__img-box--3 {
-  background-image: url("../img/partners-img3.png");
-}
-.partners__img-box--3:hover {
-  background-image: url("../img/partners-img3color.png");
-}
-.partners__img-box--4 {
-  background-image: url("../img/partners-img4.png");
-}
-.partners__img-box--5 {
-  background-image: url("../img/partners-img5.png");
-}
-.partners__img-box--5:hover {
-  background-image: url("../img/partners-img5color.png");
-}
-.partners__img-box--6 {
-  background-image: url("../img/partners-img6.png");
-}
-.partners__img-box--6:hover {
-  background-image: url("../img/partners-img6color.png");
-}
-.partners__img-box--7 {
-  background-image: url("../img/partners-img7.png");
-}
-.partners__img-box--7:hover {
-  background-image: url("../img/partners-img7color.png");
-}
-.partners__img-box--8 {
-  background-image: url("../img/partners-img8.png");
-}
-.partners__img-box--8:hover {
-  background-image: url("../img/partners-img8color.png");
-}
-.partners__img-box--9 {
-  background-image: url("../img/partners-img9.png");
-}
-.partners__img-box--9:hover {
-  background-image: url("../img/partners-img9color.png");
-}
-.partners__img-box--10 {
-  background-image: url("../img/partners-img10.png");
-}
-.partners__img-box--10:hover {
-  background-image: url("../img/partners-img10color.png");
-}
-
-.partners .swiper-slide:active .partners__img-box--1,
-.partners .swiper-slide:active .partners__img-box--2,
-.partners .swiper-slide:active .partners__img-box--3,
-.partners .swiper-slide:active .partners__img-box--4,
-.partners .swiper-slide:active .partners__img-box--5,
-.partners .swiper-slide:active .partners__img-box--6,
-.partners .swiper-slide:active .partners__img-box--7,
-.partners .swiper-slide:active .partners__img-box--8,
-.partners .swiper-slide:active .partners__img-box--9,
-.partners .swiper-slide:active .partners__img-box--10 {
-  border: 1px solid #9D5CD0;
+.partners__link:hover .partners__img {
+  filter: grayscale(0);
 }
 
 .form-content {
-  padding-top: 21px;
-  padding-bottom: 24px;
+  padding-top: 36px;
+  padding-bottom: 37px;
   border-bottom: 1px solid #CACACA;
   border-top: 1px solid #CACACA;
 }
@@ -1492,7 +1516,7 @@ label:focus > .checkboxes__custome-checkbox {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 900px;
+  width: 906px;
 }
 .form__input {
   border: 1px solid #333333;
@@ -1501,7 +1525,7 @@ label:focus > .checkboxes__custome-checkbox {
   font-weight: 400;
   font-size: 16px;
   color: #999999;
-  width: 260px;
+  width: 270px;
   transition: background 0.2s linear;
   outline: none;
 }
@@ -1601,8 +1625,10 @@ label:focus > .checkboxes__custome-checkbox {
 
 .js-validate-error-label {
   position: absolute;
-  top: -20px;
+  top: -15px;
   left: 20px;
+  font-weight: 400;
+  font-size: 12px;
 }
 
 .map-container {
@@ -1648,15 +1674,6 @@ label:focus > .checkboxes__custome-checkbox {
 }
 .footer__svg:focus path {
   fill: #9D5CD0;
-}
-.footer__true-css {
-  margin: 0;
-  display: block;
-  position: absolute;
-  left: 50%;
-  transform: translateY(-50%);
-  top: auto;
-  bottom: 0;
 }
 
 @media screen and (max-width: 1500px) {
@@ -1917,6 +1934,14 @@ label:focus > .checkboxes__custome-checkbox {
 
   .catalog__img-descr {
     font-size: 12px;
+  }
+
+  .accordion__content-title {
+    font-size: 18px;
+  }
+
+  .accordion__content-subtitle {
+    font-size: 14px;
   }
 
   .partners {
@@ -2180,18 +2205,17 @@ label:focus > .checkboxes__custome-checkbox {
   background: transparent;
   border: none;
   padding: 0;
-  width: 16px;
-  height: 16px;
+  width: 100%;
+  height: 100%;
   position: relative;
+  top: -5px;
+  cursor: pointer;
 }
 .modal__close-line {
   position: absolute;
   height: 1px;
   width: 100%;
   background: #000000;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 .modal__close-line--one {
   transform: rotate(45deg);
@@ -2204,4 +2228,6 @@ label:focus > .checkboxes__custome-checkbox {
   top: 5px;
   right: 20px;
   cursor: pointer;
+  width: 16px;
+  height: 16px;
 }

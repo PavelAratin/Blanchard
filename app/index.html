@@ -197,8 +197,8 @@
           <span class="gallerey__descr">Фильтр:</span>
           <button class="gallerey__button">Живопись</button>
           <ul class="gallerey__dropdown-list gallerey__dropdown-list--hidden" aria-label="Выпадающий список выбора направления художества">
-            <li class="gallerey__dropdown-item" aria-label="Рисунок">Рисунок</li>
-            <li class="gallerey__dropdown-item" aria-label="Скульптура">Скульптура</li>
+            <li class="gallerey__dropdown-item" tabindex="0" aria-label="Рисунок">Рисунок</li>
+            <li class="gallerey__dropdown-item" tabindex="0" aria-label="Скульптура">Скульптура</li>
           </ul>
         </div>
         <div class="checkboxes" aria-label="Список чекбоксов выбора временни">
@@ -273,7 +273,7 @@
   <div class="container">
     <div class="catalog__top">
       <h2 class="catalog__title">Каталог</h2>
-      <ul class="catalog__list">
+      <!-- <ul class="catalog__list">
         <li class="catalog__item">
           <button class="catalog__btn js-tab-btn" data-country-btn="France">
             <img class="catalog__img-country" src="../img/france.png" alt="Франция">
@@ -299,7 +299,7 @@
             <img class="catalog__img-country" src="../img/belgium.png" alt="Бельгия">
           </button>
         </li>
-      </ul>
+      </ul> -->
     </div>
     <p class="catalog__subtitle">Акционеры крупнейших компаний, которые представляют собой яркий пример
       континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и
@@ -530,12 +530,17 @@
 
             <div class="accordion__content ac-panel">
               <div class="accordion__content-wrap">
-                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum
-                  doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa
-                  molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus. Lorem ipsum
-                  dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe
-                  corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis
-                  explicabo ipsam eveniet voluptas atque accusamus.</p>
+                <picture>
+                  <source srcset="img/grey-square-mobil.png" media="(max-width: 768px)">
+                  <img class="accordion__content-img" srcset="img/grey-square.png" alt="Заглушка">
+                </picture>
+                <div class="accordion__content-text-content">
+                  <span class="accordion__content-title">Здесь пока пусто</span>
+                  <span class="accordion__content-subtitle">А в галерее вы всегда можете найти что-то интересное для себя</span>
+                  <a href="#" class="accordion__content-link-gallerey">
+                    <span class="accordion__content-link-gallerey-text">В галерею</span>
+                  </a>
+                </div>
               </div>
             </div>
           </li>
@@ -556,12 +561,17 @@
 
             <div class="accordion__content ac-panel">
               <div class="accordion__content-wrap">
-                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum
-                  doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa
-                  molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus. Lorem ipsum
-                  dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe
-                  corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis
-                  explicabo ipsam eveniet voluptas atque accusamus.</p>
+                <picture>
+                  <source srcset="img/grey-square-mobil.png" media="(max-width: 768px)">
+                  <img class="accordion__content-img" srcset="img/grey-square.png" alt="Заглушка">
+                </picture>
+                <div class="accordion__content-text-content">
+                  <span class="accordion__content-title">Здесь пока пусто</span>
+                  <span class="accordion__content-subtitle">А в галерее вы всегда можете найти что-то интересное для себя</span>
+                  <a href="#" class="accordion__content-link-gallerey">
+                    <span class="accordion__content-link-gallerey-text">В галерею</span>
+                  </a>
+                </div>
               </div>
             </div>
           </li>
@@ -582,12 +592,17 @@
 
             <div class="accordion__content ac-panel">
               <div class="accordion__content-wrap">
-                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum
-                  doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa
-                  molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus. Lorem ipsum
-                  dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe
-                  corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis
-                  explicabo ipsam eveniet voluptas atque accusamus.</p>
+                <picture>
+                  <source srcset="img/grey-square-mobil.png" media="(max-width: 768px)">
+                  <img class="accordion__content-img" srcset="img/grey-square.png" alt="Заглушка">
+                </picture>
+                <div class="accordion__content-text-content">
+                  <span class="accordion__content-title">Здесь пока пусто</span>
+                  <span class="accordion__content-subtitle">А в галерее вы всегда можете найти что-то интересное для себя</span>
+                  <a href="#" class="accordion__content-link-gallerey">
+                    <span class="accordion__content-link-gallerey-text">В галерею</span>
+                  </a>
+                </div>
               </div>
             </div>
           </li>
@@ -608,12 +623,17 @@
 
             <div class="accordion__content ac-panel">
               <div class="accordion__content-wrap">
-                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum
-                  doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa
-                  molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus. Lorem ipsum
-                  dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe
-                  corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis
-                  explicabo ipsam eveniet voluptas atque accusamus.</p>
+                <picture>
+                  <source srcset="img/grey-square-mobil.png" media="(max-width: 768px)">
+                  <img class="accordion__content-img" srcset="img/grey-square.png" alt="Заглушка">
+                </picture>
+                <div class="accordion__content-text-content">
+                  <span class="accordion__content-title">Здесь пока пусто</span>
+                  <span class="accordion__content-subtitle">А в галерее вы всегда можете найти что-то интересное для себя</span>
+                  <a href="#" class="accordion__content-link-gallerey">
+                    <span class="accordion__content-link-gallerey-text">В галерею</span>
+                  </a>
+                </div>
               </div>
             </div>
           </li>
@@ -634,12 +654,17 @@
 
             <div class="accordion__content ac-panel">
               <div class="accordion__content-wrap">
-                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum
-                  doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa
-                  molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus. Lorem ipsum
-                  dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe
-                  corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis
-                  explicabo ipsam eveniet voluptas atque accusamus.</p>
+                <picture>
+                  <source srcset="img/grey-square-mobil.png" media="(max-width: 768px)">
+                  <img class="accordion__content-img" srcset="img/grey-square.png" alt="Заглушка">
+                </picture>
+                <div class="accordion__content-text-content">
+                  <span class="accordion__content-title">Здесь пока пусто</span>
+                  <span class="accordion__content-subtitle">А в галерее вы всегда можете найти что-то интересное для себя</span>
+                  <a href="#" class="accordion__content-link-gallerey">
+                    <span class="accordion__content-link-gallerey-text">В галерею</span>
+                  </a>
+                </div>
               </div>
             </div>
           </li>
@@ -660,12 +685,17 @@
 
             <div class="accordion__content ac-panel">
               <div class="accordion__content-wrap">
-                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum
-                  doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa
-                  molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus. Lorem ipsum
-                  dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe
-                  corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis
-                  explicabo ipsam eveniet voluptas atque accusamus.</p>
+                <picture>
+                  <source srcset="img/grey-square-mobil.png" media="(max-width: 768px)">
+                  <img class="accordion__content-img" srcset="img/grey-square.png" alt="Заглушка">
+                </picture>
+                <div class="accordion__content-text-content">
+                  <span class="accordion__content-title">Здесь пока пусто</span>
+                  <span class="accordion__content-subtitle">А в галерее вы всегда можете найти что-то интересное для себя</span>
+                  <a href="#" class="accordion__content-link-gallerey">
+                    <span class="accordion__content-link-gallerey-text">В галерею</span>
+                  </a>
+                </div>
               </div>
             </div>
           </li>
@@ -699,7 +729,7 @@
             <div class="events__wrapper">
               <span class="events__value">ММОМА<br>
                 24 марта 19:00</span>
-              <p class="events__subtitle">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</p>
+              <p class="events__subtitle events__subtitle--two">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</p>
               <p class="events__descr">Высокий уровень вовлечения представителей целевой аудитории является четким
                 доказательством простого факта.</p>
               <a href="#" class="events__link"><span class="events__link-text">Подробнее</span></a>
@@ -710,8 +740,8 @@
             <div class="events__wrapper">
               <span class="events__value">Еврейский музей
                 с 31 марта по 21 апреля</span>
-              <p class="events__subtitle">Выставка «Формация 2020»</p>
-              <p class="events__descr">Идейные соображения высшего порядка, а также современная методология разработки
+              <p class="events__subtitle events__subtitle--three">Выставка «Формация 2020»</p>
+              <p class="events__descr events__descr--width">Идейные соображения высшего порядка, а также современная методология разработки
                 играет важную роль в формировании глубокомысленных рассуждений</p>
               <a href="#" class="events__link"><span class="events__link-text">Подробнее</span></a>
             </div>
@@ -721,8 +751,8 @@
             <div class="events__wrapper">
               <span class="events__value">Еврейский музей
                 с 31 марта по 21 апреля</span>
-              <p class="events__subtitle">Выставка «Формация 2020»</p>
-              <p class="events__descr">Идейные соображения высшего порядка, а также современная методология разработки
+              <p class="events__subtitle events__subtitle--three">Выставка «Формация 2020»</p>
+              <p class="events__descr events__descr--width">Идейные соображения высшего порядка, а также современная методология разработки
                 играет важную роль в формировании глубокомысленных рассуждений</p>
               <a href="#" class="events__link">Подробнее</a>
             </div>
@@ -739,14 +769,14 @@
       Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно
       фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не
       уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде
-      всего, постоянное информационно-пропагандистское <span class="project__tultip"
-        data-text="Пример современных тенденций - современная методология разработки"></span> обеспечение нашей
+      всего, постоянное информационно-пропагандистское <button class="project__tultip" tabindex="0"
+        data-text="Пример современных тенденций - современная методология разработки"></button> обеспечение нашей
       деятельности однозначно фиксирует необходимость
       экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут
-      быть рассмотрены <span class="project__tultip project__tultip--value"
-        data-text="В стремлении повысить качество"></span> исключительно в разрезе маркетинговых и финансовых <span
-        class="project__tultip"
-        data-text="Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции  "></span>
+      быть рассмотрены <button class="project__tultip project__tultip--value" tabindex="0"
+        data-text="В стремлении повысить качество" tabindex="0"></button> исключительно в разрезе маркетинговых и
+      финансовых <button class="project__tultip"
+        data-text="Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции  "></button>
       предпосылок. Банальные, но неопровержимые
       выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою
       очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее:
@@ -758,35 +788,55 @@
       <div class="swiper-button-next js-swiper-button-next2"></div>
       <div class="swiper js-project-partners">
         <div class="swiper-wrapper">
-          <div class="swiper-slide" tabindex="0">
-            <div class="partners__img-box partners__img-box--1"></div>
+          <div class="swiper-slide">
+            <a href="#" class="partners__link">
+              <img class="partners__img" src="img/partners-img1color.png" alt="Логотип партнера">
+            </a>
           </div>
-          <div class="swiper-slide" tabindex="0">
-            <div class="partners__img-box partners__img-box--2"></div>
+          <div class="swiper-slide">
+            <a href="#" class="partners__link">
+              <img class="partners__img" src="img/partners-img2color.png" alt="Логотип партнера">
+            </a>
           </div>
-          <div class="swiper-slide" tabindex="0">
-            <div class="partners__img-box partners__img-box--3"></div>
+          <div class="swiper-slide">
+            <a href="#" class="partners__link">
+              <img class="partners__img" src="img/partners-img3color.png" alt="Логотип партнера">
+            </a>
           </div>
-          <div class="swiper-slide" tabindex="0">
-            <div class="partners__img-box partners__img-box--4"></div>
+          <div class="swiper-slide">
+            <a href="#" class="partners__link">
+              <img class="partners__img" src="img/partners-img4color.png" alt="Логотип партнера">
+            </a>
           </div>
-          <div class="swiper-slide" tabindex="0">
-            <div class="partners__img-box partners__img-box--5"></div>
+          <div class="swiper-slide">
+            <a href="#" class="partners__link">
+              <img class="partners__img" src="img/partners-img5color.png" alt="Логотип партнера">
+            </a>
           </div>
-          <div class="swiper-slide" tabindex="0">
-            <div class="partners__img-box partners__img-box--6"></div>
+          <div class="swiper-slide">
+            <a href="#" class="partners__link">
+              <img class="partners__img" src="img/partners-img6color.png" alt="Логотип партнера">
+            </a>
           </div>
-          <div class="swiper-slide" tabindex="0">
-            <div class="partners__img-box partners__img-box--7"></div>
+          <div class="swiper-slide">
+            <a href="#" class="partners__link">
+              <img class="partners__img" src="img/partners-img7color.png" alt="Логотип партнера">
+            </a>
           </div>
-          <div class="swiper-slide" tabindex="0">
-            <div class="partners__img-box partners__img-box--8"></div>
+          <div class="swiper-slide">
+            <a href="#" class="partners__link">
+              <img class="partners__img" src="img/partners-img8color.png" alt="Логотип партнера">
+            </a>
           </div>
-          <div class="swiper-slide" tabindex="0">
-            <div class="partners__img-box partners__img-box--9"></div>
+          <div class="swiper-slide">
+            <a href="#" class="partners__link">
+              <img class="partners__img" src="img/partners-img9color.png" alt="Логотип партнера">
+            </a>
           </div>
-          <div class="swiper-slide" tabindex="0">
-            <div class="partners__img-box partners__img-box--10"></div>
+          <div class="swiper-slide">
+            <a href="#" class="partners__link">
+              <img class="partners__img" src="img/partners-img10color.png" alt="Логотип партнера">
+            </a>
           </div>
         </div>
       </div>
@@ -873,11 +923,13 @@
       <span class="modal__subtitle">"Женщина с граблями"</span>
       <span class="modal__age">1931-1932</span>
       <p class="modal__description">Картина из второй серии крестьянского цикла работ казимира Малевича. Художник принялся за её создание 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+      <div class="modal__wrapper-button">
+        <button class="modal__close">
+          <span class="modal__close-line modal__close-line--one"></span>
+          <span class="modal__close-line modal__close-line--two"></span>
+        </button>
+      </div>
     </div>
-    <button class="close modal__close">
-      <span class="close__line close__line--one"></span>
-      <span class="close__line close__line--two"></span>
-    </button>
   </div>
 </div>
 <div class="modal js-modal" id="modal-3">
@@ -888,11 +940,13 @@
       <span class="modal__subtitle">"Женщина с граблями"</span>
       <span class="modal__age">1931-1932</span>
       <p class="modal__description">Картина из второй серии крестьянского цикла работ казимира Малевича. Художник принялся за её создание 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+      <div class="modal__wrapper-button">
+        <button class="modal__close">
+          <span class="modal__close-line modal__close-line--one"></span>
+          <span class="modal__close-line modal__close-line--two"></span>
+        </button>
+      </div>
     </div>
-    <button class="close modal__close">
-      <span class="close__line close__line--one"></span>
-      <span class="close__line close__line--two"></span>
-    </button>
   </div>
 </div>
 
@@ -904,11 +958,13 @@
       <span class="modal__subtitle">"Женщина с граблями4"</span>
       <span class="modal__age">1931-1932</span>
       <p class="modal__description">Картина из второй серии крестьянского цикла работ казимира Малевича. Художник принялся за её создание 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+      <div class="modal__wrapper-button">
+        <button class="modal__close">
+          <span class="modal__close-line modal__close-line--one"></span>
+          <span class="modal__close-line modal__close-line--two"></span>
+        </button>
+      </div>
     </div>
-    <button class="close modal__close" aria-label="Зкрыть мобильное меню">
-      <span class="close__line close__line--one"></span>
-      <span class="close__line close__line--two"></span>
-    </button>
   </div>
 </div>
 
@@ -920,11 +976,13 @@
       <span class="modal__subtitle">"Женщина с граблями"</span>
       <span class="modal__age">1931-1932</span>
       <p class="modal__description">Картина из второй серии крестьянского цикла работ казимира Малевича. Художник принялся за её создание 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+      <div class="modal__wrapper-button">
+        <button class="modal__close">
+          <span class="modal__close-line modal__close-line--one"></span>
+          <span class="modal__close-line modal__close-line--two"></span>
+        </button>
+      </div>
     </div>
-    <button class="close modal__close" aria-label="Зкрыть мобильное меню">
-      <span class="close__line close__line--one"></span>
-      <span class="close__line close__line--two"></span>
-    </button>
   </div>
 </div>
 <div class="modal js-modal" id="modal-6">
@@ -935,11 +993,13 @@
       <span class="modal__subtitle">"Женщина с граблями"</span>
       <span class="modal__age">1931-1932</span>
       <p class="modal__description">Картина из второй серии крестьянского цикла работ казимира Малевича. Художник принялся за её создание 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+      <div class="modal__wrapper-button">
+        <button class="modal__close">
+          <span class="modal__close-line modal__close-line--one"></span>
+          <span class="modal__close-line modal__close-line--two"></span>
+        </button>
+      </div>
     </div>
-    <button class="close modal__close" aria-label="Зкрыть мобильное меню">
-      <span class="close__line close__line--one"></span>
-      <span class="close__line close__line--two"></span>
-    </button>
   </div>
 </div>
     </main>
@@ -980,13 +1040,6 @@
       </ul>
     </div>
   </div>
-  <p class="footer__true-css">
-    <a href="http://jigsaw.w3.org/css-validator/check/referer">
-        <img style="border:0;width:88px;height:31px"
-            src="http://jigsaw.w3.org/css-validator/images/vcss"
-            alt="Правильный CSS!" />
-    </a>
-</p>
 </footer>
   </div>
   <script src="./simplebar/simplebar.min.js"></script>
