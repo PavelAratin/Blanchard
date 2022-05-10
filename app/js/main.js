@@ -32,11 +32,11 @@ const swiperGallerey = new Swiper('.js-gallerey-swiper', {
     },
     767: {
       slidesPerView: 2,
-      spaceBetween: 10
+      spaceBetween: 35
     },
     1024: {
       slidesPerView: 2,
-      spaceBetween: 10
+      spaceBetween: 30
     },
     1345: {
       slidesPerView: 3,
@@ -52,8 +52,8 @@ const swiperEvents = new Swiper('.events__swiper', {
   spaceBetween: 50,
   // Navigation arrows
   navigation: {
-    nextEl: '.js-swiper-button-prev1',
-    prevEl: '.js-swiper-button-next1',
+    nextEl: '.js-swiper-button-next1',
+    prevEl: '.js-swiper-button-prev1',
   },
   pagination: {
     el: '.swiper-pagination',
@@ -65,10 +65,10 @@ const swiperEvents = new Swiper('.events__swiper', {
     },
     767: {
       slidesPerView: 2,
-      spaceBetween: 10
+      spaceBetween: 31
     },
     1024: {
-      slidesPerView: 2,
+      slidesPerView: 3,
       spaceBetween: 30,
     },
     1345: {
@@ -85,8 +85,8 @@ const swiperPartners = new Swiper('.js-project-partners', {
   spaceBetween: 50,
   // Navigation arrows
   navigation: {
-    nextEl: '.js-swiper-button-prev2',
-    prevEl: '.js-swiper-button-next2',
+    nextEl: '.js-swiper-button-next2',
+    prevEl: '.js-swiper-button-prev2',
   },
   breakpoints: {
     320: {
@@ -95,7 +95,7 @@ const swiperPartners = new Swiper('.js-project-partners', {
     },
     767: {
       slidesPerView: 2,
-      spaceBetween: 10
+      spaceBetween: 33
     },
     1024: {
       slidesPerView: 2,

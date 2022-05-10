@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link type="image/x-icon" href="favicon.ico" rel="shortcut icon">
   <link rel="stylesheet" href="simplebar/simplebar.css">
   <link rel="stylesheet" href="swiper/swiper.min.css">
   <link rel="stylesheet" href="swiper/swiper.css">
@@ -158,7 +159,7 @@
     <button class="text-content__button" aria-label="Подписка на рассылку">Подписаться на рассылку</button>
   </div>
 </div>
-      <section class="hero">
+      <div class="hero">
   <div class="swiper hero__swiper js-hero-swiper">
     <div class="swiper-wrapper">
       <div class="swiper-slide hero__swiper-slide hero__swiper-slide--one">
@@ -169,7 +170,7 @@
       </div>
     </div>
   </div>
-</section>
+</div>
     </div>
     <main>
       <section class="about" id="about">
@@ -197,11 +198,11 @@
           <span class="gallerey__descr">Фильтр:</span>
           <button class="gallerey__button">Живопись</button>
           <ul class="gallerey__dropdown-list gallerey__dropdown-list--hidden" aria-label="Выпадающий список выбора направления художества">
-            <li class="gallerey__dropdown-item" tabindex="0" aria-label="Рисунок">Рисунок</li>
-            <li class="gallerey__dropdown-item" tabindex="0" aria-label="Скульптура">Скульптура</li>
+            <li class="gallerey__dropdown-item" tabindex="0">Рисунок</li>
+            <li class="gallerey__dropdown-item" tabindex="0">Скульптура</li>
           </ul>
         </div>
-        <div class="checkboxes" aria-label="Список чекбоксов выбора временни">
+        <div class="checkboxes">
           <label aria-label="21й век">
             <input tabindex="0" type="checkbox" class="checkboxes__real-checkbox">
             <span class="checkboxes__custome-checkbox"></span>
@@ -273,33 +274,6 @@
   <div class="container">
     <div class="catalog__top">
       <h2 class="catalog__title">Каталог</h2>
-      <!-- <ul class="catalog__list">
-        <li class="catalog__item">
-          <button class="catalog__btn js-tab-btn" data-country-btn="France">
-            <img class="catalog__img-country" src="../img/france.png" alt="Франция">
-          </button>
-        </li>
-        <li class="catalog__item">
-          <button class="catalog__btn js-tab-btn" data-country-btn="German">
-            <img class="catalog__img-country" src="../img/german.png" alt="Германия">
-          </button>
-        </li>
-        <li class="catalog__item">
-          <button class="catalog__btn js-tab-btn" data-country-btn="Italy">
-            <img class="catalog__img-country" src="../img/italy.png" alt="Италия">
-          </button>
-        </li>
-        <li class="catalog__item">
-          <button class="catalog__btn js-tab-btn" data-country-btn="Russia">
-            <img class="catalog__img-country" src="../img/russia.png" alt="Россия">
-          </button>
-        </li>
-        <li class="catalog__item">
-          <button class="catalog__btn js-tab-btn" data-country-btn="Belgium">
-            <img class="catalog__img-country" src="../img/belgium.png" alt="Бельгия">
-          </button>
-        </li>
-      </ul> -->
     </div>
     <p class="catalog__subtitle">Акционеры крупнейших компаний, которые представляют собой яркий пример
       континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и
@@ -532,11 +506,12 @@
               <div class="accordion__content-wrap">
                 <picture>
                   <source srcset="img/grey-square-mobil.png" media="(max-width: 768px)">
-                  <img class="accordion__content-img" srcset="img/grey-square.png" alt="Заглушка">
+                  <img class="accordion__content-img" src="img/grey-square.png" alt="Заглушка">
                 </picture>
                 <div class="accordion__content-text-content">
                   <span class="accordion__content-title">Здесь пока пусто</span>
-                  <span class="accordion__content-subtitle">А в галерее вы всегда можете найти что-то интересное для себя</span>
+                  <span class="accordion__content-subtitle">А в галерее вы всегда можете найти что-то интересное для
+                    себя</span>
                   <a href="#" class="accordion__content-link-gallerey">
                     <span class="accordion__content-link-gallerey-text">В галерею</span>
                   </a>
@@ -563,11 +538,12 @@
               <div class="accordion__content-wrap">
                 <picture>
                   <source srcset="img/grey-square-mobil.png" media="(max-width: 768px)">
-                  <img class="accordion__content-img" srcset="img/grey-square.png" alt="Заглушка">
+                  <img class="accordion__content-img" src="img/grey-square.png" alt="Заглушка">
                 </picture>
                 <div class="accordion__content-text-content">
                   <span class="accordion__content-title">Здесь пока пусто</span>
-                  <span class="accordion__content-subtitle">А в галерее вы всегда можете найти что-то интересное для себя</span>
+                  <span class="accordion__content-subtitle">А в галерее вы всегда можете найти что-то интересное для
+                    себя</span>
                   <a href="#" class="accordion__content-link-gallerey">
                     <span class="accordion__content-link-gallerey-text">В галерею</span>
                   </a>
@@ -594,11 +570,12 @@
               <div class="accordion__content-wrap">
                 <picture>
                   <source srcset="img/grey-square-mobil.png" media="(max-width: 768px)">
-                  <img class="accordion__content-img" srcset="img/grey-square.png" alt="Заглушка">
+                  <img class="accordion__content-img" src="img/grey-square.png" alt="Заглушка">
                 </picture>
                 <div class="accordion__content-text-content">
                   <span class="accordion__content-title">Здесь пока пусто</span>
-                  <span class="accordion__content-subtitle">А в галерее вы всегда можете найти что-то интересное для себя</span>
+                  <span class="accordion__content-subtitle">А в галерее вы всегда можете найти что-то интересное для
+                    себя</span>
                   <a href="#" class="accordion__content-link-gallerey">
                     <span class="accordion__content-link-gallerey-text">В галерею</span>
                   </a>
@@ -625,11 +602,12 @@
               <div class="accordion__content-wrap">
                 <picture>
                   <source srcset="img/grey-square-mobil.png" media="(max-width: 768px)">
-                  <img class="accordion__content-img" srcset="img/grey-square.png" alt="Заглушка">
+                  <img class="accordion__content-img" src="img/grey-square.png" alt="Заглушка">
                 </picture>
                 <div class="accordion__content-text-content">
                   <span class="accordion__content-title">Здесь пока пусто</span>
-                  <span class="accordion__content-subtitle">А в галерее вы всегда можете найти что-то интересное для себя</span>
+                  <span class="accordion__content-subtitle">А в галерее вы всегда можете найти что-то интересное для
+                    себя</span>
                   <a href="#" class="accordion__content-link-gallerey">
                     <span class="accordion__content-link-gallerey-text">В галерею</span>
                   </a>
@@ -656,11 +634,12 @@
               <div class="accordion__content-wrap">
                 <picture>
                   <source srcset="img/grey-square-mobil.png" media="(max-width: 768px)">
-                  <img class="accordion__content-img" srcset="img/grey-square.png" alt="Заглушка">
+                  <img class="accordion__content-img" src="img/grey-square.png" alt="Заглушка">
                 </picture>
                 <div class="accordion__content-text-content">
                   <span class="accordion__content-title">Здесь пока пусто</span>
-                  <span class="accordion__content-subtitle">А в галерее вы всегда можете найти что-то интересное для себя</span>
+                  <span class="accordion__content-subtitle">А в галерее вы всегда можете найти что-то интересное для
+                    себя</span>
                   <a href="#" class="accordion__content-link-gallerey">
                     <span class="accordion__content-link-gallerey-text">В галерею</span>
                   </a>
@@ -687,11 +666,12 @@
               <div class="accordion__content-wrap">
                 <picture>
                   <source srcset="img/grey-square-mobil.png" media="(max-width: 768px)">
-                  <img class="accordion__content-img" srcset="img/grey-square.png" alt="Заглушка">
+                  <img class="accordion__content-img" src="img/grey-square.png" alt="Заглушка">
                 </picture>
                 <div class="accordion__content-text-content">
                   <span class="accordion__content-title">Здесь пока пусто</span>
-                  <span class="accordion__content-subtitle">А в галерее вы всегда можете найти что-то интересное для себя</span>
+                  <span class="accordion__content-subtitle">А в галерее вы всегда можете найти что-то интересное для
+                    себя</span>
                   <a href="#" class="accordion__content-link-gallerey">
                     <span class="accordion__content-link-gallerey-text">В галерею</span>
                   </a>
@@ -774,7 +754,7 @@
       деятельности однозначно фиксирует необходимость
       экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут
       быть рассмотрены <button class="project__tultip project__tultip--value" tabindex="0"
-        data-text="В стремлении повысить качество" tabindex="0"></button> исключительно в разрезе маркетинговых и
+        data-text="В стремлении повысить качество"></button> исключительно в разрезе маркетинговых и
       финансовых <button class="project__tultip"
         data-text="Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции  "></button>
       предпосылок. Банальные, но неопровержимые
@@ -788,56 +768,33 @@
       <div class="swiper-button-next js-swiper-button-next2"></div>
       <div class="swiper js-project-partners">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <a href="#" class="partners__link">
-              <img class="partners__img" src="img/partners-img1color.png" alt="Логотип партнера">
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#" class="partners__link">
-              <img class="partners__img" src="img/partners-img2color.png" alt="Логотип партнера">
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#" class="partners__link">
-              <img class="partners__img" src="img/partners-img3color.png" alt="Логотип партнера">
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#" class="partners__link">
-              <img class="partners__img" src="img/partners-img4color.png" alt="Логотип партнера">
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#" class="partners__link">
-              <img class="partners__img" src="img/partners-img5color.png" alt="Логотип партнера">
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#" class="partners__link">
-              <img class="partners__img" src="img/partners-img6color.png" alt="Логотип партнера">
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#" class="partners__link">
-              <img class="partners__img" src="img/partners-img7color.png" alt="Логотип партнера">
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#" class="partners__link">
-              <img class="partners__img" src="img/partners-img8color.png" alt="Логотип партнера">
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#" class="partners__link">
-              <img class="partners__img" src="img/partners-img9color.png" alt="Логотип партнера">
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#" class="partners__link">
-              <img class="partners__img" src="img/partners-img10color.png" alt="Логотип партнера">
-            </a>
-          </div>
+          <a href="#" class="swiper-slide partners__link">
+            <img class="partners__img" src="img/partners-img1color.png" alt="Логотип партнера">
+          </a>
+          <a href="#" class="swiper-slide partners__link">
+            <img class="partners__img" src="img/partners-img2color.png" alt="Логотип партнера">
+          </a>
+          <a href="#" class="swiper-slide partners__link">
+            <img class="partners__img" src="img/partners-img3color.png" alt="Логотип партнера">
+          </a>
+          <a href="#" class="swiper-slide partners__link">
+            <img class="partners__img" src="img/partners-img4color.png" alt="Логотип партнера">
+          </a>
+          <a href="#" class="swiper-slide partners__link">
+            <img class="partners__img" src="img/partners-img5color.png" alt="Логотип партнера">
+          </a>
+          <a href="#" class="swiper-slide partners__link">
+            <img class="partners__img" src="img/partners-img6color.png" alt="Логотип партнера">
+          </a>
+          <a href="#" class="swiper-slide partners__link">
+            <img class="partners__img" src="img/partners-img7color.png" alt="Логотип партнера">
+          </a>
+          <a href="#" class="swiper-slide partners__link">
+            <img class="partners__img" src="img/partners-img8color.png" alt="Логотип партнера">
+          </a>
+          <a href="#" class="swiper-slide partners__link">
+            <img class="partners__img" src="img/partners-img9color.png" alt="Логотип партнера">
+          </a>
         </div>
       </div>
     </div>
