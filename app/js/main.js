@@ -151,9 +151,9 @@ const swiperPartners = new Swiper('.js-project-partners', {
       });
     });
   }
-  setTabs('data-country-btn', 'data-country-content'); // в аргументах функции передаем индивидуальные data атрибуты, которые установлены в разметке для кнопок и вкладок
-  setTabs('data-painters-path', 'data-painters-target');
-  setTabs('data-other-painters-path', 'data-other-painters-target');
+  // setTabs('data-country-btn', 'data-country-content'); // в аргументах функции передаем индивидуальные data атрибуты, которые установлены в разметке для кнопок и вкладок
+  setTabs('data-painter-btn', 'data-painters-target');
+  // setTabs('data-other-painters-path', 'data-other-painters-target');
 })();
 /////////////accordion в каталоге////////////////
 (function () {
@@ -325,5 +325,23 @@ setMenuListener();
       openOnInit: [0]
     });
   })();
+}());
+//появление поиска в шабке на планшете и мобилке
+(function () {
+  const headerSearchMobile = document.querySelector('.header__search-mobile');
+  const closeHeader = document.querySelector('.close--header');
+  const headerFormSearchMobil = document.querySelector('.header__form-wrapper');
+  headerSearchMobile.addEventListener('click', (e) => {
+    headerFormSearchMobil.classList.add('active-searh-mobile');
+    e.target.style.opacity = '0';
+  });
+  closeHeader.addEventListener('click', () => {
+    headerFormSearchMobil.classList.remove('active-searh-mobile');
+    setTimeout(visibleSearch,400)
+  })
+  function visibleSearch(){
+    headerSearchMobile.querySelector('img').style.opacity= '1';
+    headerSearchMobile.style.opacity = '1';
+  };
 }());
 

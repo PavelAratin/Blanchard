@@ -45,6 +45,24 @@
       </div>
     </div>
   </div>
+  <div class="header__form-wrapper">
+    <form action="#" class="header__form">
+      <input class="header__input" type="text" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
+      <button class="header__button" aria-label="Кнопка поиска по сайту">
+        <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="6.8678" height="1.71695"
+            transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z"
+            fill="white" />
+        </svg>
+      </button>
+    </form>
+    <button class="close close--header">
+      <span class="close__line close__line--one"></span>
+      <span class="close__line close__line--two"></span>
+    </button>
+  </div>
   <div class="header__bottom">
     <div class="container">
       <div class="header__wrapper">
@@ -281,7 +299,7 @@
       по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы. </p>
     <div class="catalog__wrapper">
       <div class="catalog__left">
-        <div class="catalog__tab-content js-tab-content tab-active" data-country-content="France">
+        <div class="catalog__tab-content js-tab-content tab-active" data-painters-target="domenico">
           <img class="catalog__img" src="img/image3.jpg" alt="Картинка в каталоге">
           <span class="catalog__img-title">Доменико Гирландайо</span>
           <span class="catalog__img-age">2 июня 1448 — 11 января 1494</span>
@@ -291,28 +309,7 @@
             со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные
             граждане Флоренции в костюмах того времени).</p>
         </div>
-        <div class="catalog__tab-content js-tab-content" data-country-content="German">
-          <img class="catalog__img" src="img/unknown-hudoznik.jpg" alt="Картинка в каталоге">
-          <span class="catalog__img-title">Что мы о нём знаем?</span>
-          <p class="catalog__img-descr catalog__img-descr--margin">Пока ничего... Зато мы точно знаем, что в галерее
-            есть на что посмотреть!</p>
-          <a href="#" class="catalog__link">В галерею</a>
-        </div>
-        <div class="catalog__tab-content js-tab-content" data-country-content="Italy">
-          <img class="catalog__img" src="img/unknown-hudoznik.jpg" alt="Картинка в каталоге">
-          <span class="catalog__img-title">Что мы о нём знаем?</span>
-          <p class="catalog__img-descr catalog__img-descr--margin">Пока ничего... Зато мы точно знаем, что в галерее
-            есть на что посмотреть!</p>
-          <a href="#" class="catalog__link">В галерею</a>
-        </div>
-        <div class="catalog__tab-content js-tab-content" data-country-content="Russia">
-          <img class="catalog__img" src="img/unknown-hudoznik.jpg" alt="Картинка в каталоге">
-          <span class="catalog__img-title">Что мы о нём знаем?</span>
-          <p class="catalog__img-descr catalog__img-descr--margin">Пока ничего... Зато мы точно знаем, что в галерее
-            есть на что посмотреть!</p>
-          <a href="#" class="catalog__link">В галерею</a>
-        </div>
-        <div class="catalog__tab-content js-tab-content" data-country-content="Belgium">
+        <div class="catalog__tab-content js-tab-content" data-painters-target="empty">
           <img class="catalog__img" src="img/unknown-hudoznik.jpg" alt="Картинка в каталоге">
           <span class="catalog__img-title">Что мы о нём знаем?</span>
           <p class="catalog__img-descr catalog__img-descr--margin">Пока ничего... Зато мы точно знаем, что в галерее
@@ -849,7 +846,7 @@
   <div class="mobile-menu__btn">
     <a href="#" class="mobile-menu__login">Войти</a>
   </div>
-  <button class="close">
+  <button class="close close--mobile">
     <span class="close__line close__line--one"></span>
     <span class="close__line close__line--two"></span>
   </button>
@@ -974,7 +971,8 @@
                 fill="#CACACA" />
             </svg>
           </a></li>
-        <li class="footer__social-item"><a href="#" class="footer__link">
+        <li class="footer__social-item">
+          <a href="#" class="footer__link">
             <svg class="footer__svg" width="45" height="45" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M18.1172 22.5C18.1172 24.8785 20.0453 26.8066 22.4238 26.8066C24.8024 26.8066 26.7305 24.8785 26.7305 22.5C26.7305 20.1215 24.8024 18.1934 22.4238 18.1934C20.0453 18.1934 18.1172 20.1215 18.1172 22.5Z"
