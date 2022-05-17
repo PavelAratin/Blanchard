@@ -72,6 +72,10 @@ body {
   margin: 0 auto;
 }
 
+.js-body-overflow {
+  overflow: hidden;
+}
+
 .header {
   color: #ffffff;
   position: relative;
@@ -250,6 +254,11 @@ body {
 }
 .header__search-mobile {
   display: none;
+  padding: 0;
+  border: none;
+  background: transparent;
+  width: 28px;
+  height: 28px;
 }
 .header__form-wrapper {
   display: flex;
@@ -600,7 +609,7 @@ body {
 }
 
 .gallerey {
-  padding: 85px 0 81px 0;
+  padding: 85px 0 79px 0;
   background: url("../img/gallerey-bg.jpg") no-repeat center;
   background-size: cover;
 }
@@ -617,7 +626,7 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 300px;
+  width: 400px;
 }
 .gallerey__button {
   background: transparent url("../img/arrow-down.svg") no-repeat 97% 53%;
@@ -760,6 +769,7 @@ body {
 .checkboxes label {
   outline: none;
   transition: all 0.2s linear;
+  margin-left: -1px;
 }
 .checkboxes label:not(:last-child) {
   margin-bottom: 15px;
@@ -880,7 +890,7 @@ label:focus > .checkboxes__custome-checkbox {
   font-weight: 400;
   font-size: 16px;
   line-height: 2;
-  color: #999999;
+  color: #333333;
   max-width: 749px;
   margin: 0;
 }
@@ -1795,7 +1805,7 @@ label:focus > .checkboxes__custome-checkbox {
 
   .text-content {
     padding-top: 121px;
-    padding-bottom: 116px;
+    padding-bottom: 115px;
   }
 
   .text-content__title {
@@ -1807,8 +1817,16 @@ label:focus > .checkboxes__custome-checkbox {
     margin-bottom: 132px !important;
   }
 
+  .about {
+    padding-bottom: 53px;
+  }
+
   .gallerey {
-    padding-bottom: 45px;
+    padding-bottom: 77px;
+  }
+
+  .gallerey__filter {
+    width: 280px;
   }
 
   .gallerey__button {
@@ -1866,7 +1884,7 @@ label:focus > .checkboxes__custome-checkbox {
   }
 
   .partners {
-    padding-bottom: 58px;
+    padding-bottom: 80px;
   }
 
   .partners__title {
@@ -1874,15 +1892,20 @@ label:focus > .checkboxes__custome-checkbox {
   }
 
   .partners .swiper-button-next {
-    top: 47%;
+    top: 52%;
   }
 
   .partners .swiper-button-prev {
-    top: 45%;
+    top: 52%;
+  }
+
+  .partners .swiper-slide {
+    height: 129px;
   }
 
   .form-content {
     padding-top: 43px;
+    padding-bottom: 42px;
   }
 
   .form__location {
@@ -1911,7 +1934,8 @@ label:focus > .checkboxes__custome-checkbox {
   }
 
   .footer {
-    padding-top: 44px;
+    padding-top: 39px;
+    padding-bottom: 36px;
   }
 }
 @media screen and (max-width: 1023px) {
@@ -1955,7 +1979,7 @@ label:focus > .checkboxes__custome-checkbox {
   }
 
   .gallerey {
-    padding-bottom: 62px;
+    padding-bottom: 57px;
   }
 
   .gallerey__wrapper {
@@ -2004,7 +2028,7 @@ label:focus > .checkboxes__custome-checkbox {
   }
 
   .accordion {
-    padding-bottom: 49px;
+    padding-bottom: 51px;
   }
 
   .accordion__content-wrap {
@@ -2160,6 +2184,11 @@ label:focus > .checkboxes__custome-checkbox {
     padding-top: 40px;
   }
 
+  .header__search-mobile {
+    width: 18px;
+    height: 17px;
+  }
+
   .close--header {
     right: 15px;
   }
@@ -2239,7 +2268,7 @@ label:focus > .checkboxes__custome-checkbox {
 
   .about {
     padding-top: 53px;
-    padding-bottom: 30px;
+    padding-bottom: 56px;
   }
 
   .catalog {
@@ -2260,10 +2289,6 @@ label:focus > .checkboxes__custome-checkbox {
 
   .about__subtitle {
     font-size: 14px;
-  }
-
-  .about__subtitle {
-    max-width: 290px;
   }
 
   .gallerey__title {
@@ -2320,10 +2345,6 @@ label:focus > .checkboxes__custome-checkbox {
 
   .catalog__img-title {
     margin-bottom: 20px;
-  }
-
-  .catalog__img-descr {
-    font-size: 12px;
   }
 
   .accordion__heading {
@@ -2449,9 +2470,18 @@ label:focus > .checkboxes__custome-checkbox {
     width: 50px;
     height: 50px;
   }
+
+  .mobile-menu .nav {
+    font-size: 16px !important;
+  }
+
+  .close--mobile {
+    top: -419px !important;
+    left: 0;
+  }
 }
 .mobile-menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
@@ -2460,6 +2490,8 @@ label:focus > .checkboxes__custome-checkbox {
   z-index: 5;
   padding: 96px 0 0 15px;
   transition: transform 0.4s linear;
+  height: 100vh;
+  overflow-y: auto;
 }
 .mobile-menu__btn {
   padding: 10px 30px;

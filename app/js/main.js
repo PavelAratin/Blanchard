@@ -270,12 +270,14 @@ setMenuListener();
   const closeMenu = document.querySelector('.close');
   btnBurger.addEventListener('click', function () {
     mobileMenu.classList.remove('mobile-menu--hidden')
+    document.querySelector('body').classList.add('js-body-overflow');
   });
   closeMenu.addEventListener('click', function () {
     mobileMenu.classList.add('mobile-menu--hidden')
   });
   mobileMenu.addEventListener('click', function (e) {
     this.classList.add('mobile-menu--hidden')
+    document.querySelector('body').classList.remove('js-body-overflow');
   });
 }());
 ////////модальные окна в галереи///
@@ -337,10 +339,10 @@ setMenuListener();
   });
   closeHeader.addEventListener('click', () => {
     headerFormSearchMobil.classList.remove('active-searh-mobile');
-    setTimeout(visibleSearch,400)
+    setTimeout(visibleSearch, 400)
   })
-  function visibleSearch(){
-    headerSearchMobile.querySelector('img').style.opacity= '1';
+  function visibleSearch() {
+    headerSearchMobile.querySelector('svg').style.opacity = '1';
     headerSearchMobile.style.opacity = '1';
   };
 }());

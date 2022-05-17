@@ -41,15 +41,18 @@
           </ul>
         </nav>
         <a href="#" class="header__login"><span class="header__login-text">Войти</span></a>
-        <a class="header__search-mobile">
-          <img src="img/search.svg" alt="Поиск по сайту">
-        </a>
+        <button class="header__search-mobile">
+          <svg width="100%" height="100%" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white"/>
+            </svg>
+        </button>
       </div>
     </div>
   </div>
   <div class="header__form-wrapper">
     <form action="#" class="header__form">
-      <input class="header__input" type="text" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
+      <input class="header__input" type="text" aria-label="Поиск по сайту">
       <button class="header__button" aria-label="Кнопка поиска по сайту">
         <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="6.8678" height="1.71695"
@@ -249,37 +252,67 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="swiper-slide__imgbox" data-modal="modal-1">
-                  <img class="gallerey__img" src="img/gallerey-img1.jpg" alt="Картина1">
+                  <picture>
+                    <source srcset="img/gallerey-img1-1024.jpg" media="(max-width: 1345px)"/>
+                    <source srcset="img/gallerey-img1-768.jpg" media="(max-width: 1023px)"/>
+                    <source srcset="img/gallerey-img1-320.jpg" media="(max-width: 767px)"/>
+                    <img class="gallerey__img" src="img/gallerey-img1.jpg" alt="Картина1">
+                  </picture>
                   <a href="#" class="swiper-slide__imgbox-overlay"></a>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="swiper-slide__imgbox" data-modal="modal-2">
-                  <img class="gallerey__img" src="img/gallerey-img2.jpg" alt="Картина2">
+                  <picture>
+                    <source srcset="img/gallerey-img2-1024.jpg" media="(max-width: 1345px)"/>
+                    <source srcset="img/gallerey-img2-768.jpg" media="(max-width: 1023px)"/>
+                    <source srcset="img/gallerey-img2-320.jpg" media="(max-width: 767px)"/>
+                    <img class="gallerey__img" src="img/gallerey-img2.jpg" alt="Картина2">
+                  </picture>
                   <a href="#" class="swiper-slide__imgbox-overlay"></a>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="swiper-slide__imgbox" data-modal="modal-3">
-                  <img class="gallerey__img" src="img/gallerey-img3.jpg" alt="Картина3">
+                  <picture>
+                    <source srcset="img/gallerey-img3-1024.jpg" media="(max-width: 1345px)"/>
+                    <source srcset="img/gallerey-img3-768.jpg" media="(max-width: 1023px)"/>
+                    <source srcset="img/gallerey-img3-320.jpg" media="(max-width: 767px)"/>
+                    <img class="gallerey__img" src="img/gallerey-img3.jpg" alt="Картина3">
+                  </picture>        
                   <a href="#" class="swiper-slide__imgbox-overlay"></a>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="swiper-slide__imgbox" data-modal="modal-4">
-                  <img class="gallerey__img" src="img/gallerey-img4.jpg" alt="Картина4">
+                  <picture>
+                    <source srcset="img/gallerey-img4-1024.jpg" media="(max-width: 1345px)"/>
+                    <source srcset="img/gallerey-img4-768.jpg" media="(max-width: 1023px)"/>
+                    <source srcset="img/gallerey-img4-320.jpg" media="(max-width: 767px)"/>
+                    <img class="gallerey__img" src="img/gallerey-img4.jpg" alt="Картина4">
+                  </picture>                    
                   <a href="#" class="swiper-slide__imgbox-overlay"></a>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="swiper-slide__imgbox" data-modal="modal-5">
-                  <img class="gallerey__img" src="img/gallerey-img5.jpg" alt="Картина5">
+                  <picture>
+                    <source srcset="img/gallerey-img5-1024.jpg" media="(max-width: 1345px)"/>
+                    <source srcset="img/gallerey-img5-768.jpg" media="(max-width: 1023px)"/>
+                    <source srcset="img/gallerey-img5-320.jpg" media="(max-width: 767px)"/>
+                    <img class="gallerey__img" src="img/gallerey-img5.jpg" alt="Картина5">
+                  </picture>          
                   <a href="#" class="swiper-slide__imgbox-overlay"></a>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="swiper-slide__imgbox" data-modal="modal-6">
-                  <img class="gallerey__img" src="img/gallerey-img6.jpg" alt="Картина6">
+                  <picture>
+                    <source srcset="img/gallerey-img6-1024.jpg" media="(max-width: 1345px)"/>
+                    <source srcset="img/gallerey-img6-768.jpg" media="(max-width: 1023px)"/>
+                    <source srcset="img/gallerey-img5-320.jpg" media="(max-width: 767px)"/>
+                    <img class="gallerey__img" src="img/gallerey-img6.jpg" alt="Картина6">
+                  </picture>
                   <a href="#" class="swiper-slide__imgbox-overlay"></a>
                 </div>
               </div>
