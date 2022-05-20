@@ -2168,6 +2168,10 @@ label:focus > .checkboxes__custome-checkbox {
   }
 }
 @media screen and (max-width: 620px) {
+  .container {
+    padding: 0 15px;
+  }
+
   .header__top {
     padding: 9px 0 8px 0;
   }
@@ -2191,10 +2195,6 @@ label:focus > .checkboxes__custome-checkbox {
 
   .close--header {
     right: 15px;
-  }
-
-  .container {
-    padding: 0 14px;
   }
 
   .burger__line {
@@ -2255,24 +2255,19 @@ label:focus > .checkboxes__custome-checkbox {
     padding: 11px 19px;
   }
 
-  .about,
-.gallerey,
-.catalog,
-.events {
-    padding: 50px 0;
-  }
-
   .gallerey {
-    padding-bottom: 36px;
+    padding-top: 50px;
+    padding-bottom: 21px;
   }
 
   .about {
     padding-top: 53px;
-    padding-bottom: 56px;
+    padding-bottom: 28px;
   }
 
   .catalog {
     padding-top: 53px;
+    padding-bottom: 27px;
   }
 
   .gallerey__filter {
@@ -2284,7 +2279,7 @@ label:focus > .checkboxes__custome-checkbox {
 .events__title,
 .project__title {
     font-size: 28px;
-    margin-bottom: 14px;
+    margin-bottom: 15px;
   }
 
   .about__subtitle {
@@ -2319,17 +2314,17 @@ label:focus > .checkboxes__custome-checkbox {
   }
 
   .gallerey-swiper-wrapper .swiper-button-next {
-    left: 65%;
-    transform: translateX(-50%);
+    left: 62%;
+    transform: translateY(-50%);
   }
 
   .gallerey-swiper-wrapper .swiper-button-prev {
-    left: 33%;
-    transform: translateX(-50%);
+    left: 28%;
+    transform: translateY(-50%);
   }
 
   .gallerey .swiper-pagination.swiper-pagination-fraction.swiper-pagination-horizontal {
-    bottom: -60px;
+    bottom: -47px;
     top: auto;
     left: 50%;
     transform: translateX(-50%);
@@ -2344,17 +2339,22 @@ label:focus > .checkboxes__custome-checkbox {
   }
 
   .catalog__img-title {
-    margin-bottom: 20px;
+    margin-bottom: 17px;
+  }
+
+  .accordion {
+    padding-bottom: 22px;
   }
 
   .accordion__heading {
     padding-top: 23px;
+    padding-bottom: 18px;
   }
 
   .accordion .head-icon {
     width: 30px;
     height: 30px;
-    top: 40%;
+    top: 51%;
   }
 
   .accordion__inner-list {
@@ -2371,6 +2371,37 @@ label:focus > .checkboxes__custome-checkbox {
 
   .accordion__content-subtitle {
     font-size: 14px;
+  }
+
+  .accordion__content-wrap {
+    padding-top: 27px;
+    padding-bottom: 15px;
+  }
+
+  .events {
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
+
+  .events__wrapper {
+    padding-top: 18px;
+    padding-left: 23px;
+  }
+
+  .events__value {
+    margin-bottom: 11px;
+  }
+
+  .events .swiper-pagination {
+    bottom: 17px;
+  }
+
+  .events .swiper-pagination-bullet:not(:last-child) {
+    margin-right: 22px;
+  }
+
+  .project {
+    padding-top: 9px;
   }
 
   .partners {
@@ -2390,11 +2421,11 @@ label:focus > .checkboxes__custome-checkbox {
   }
 
   .project__description {
-    margin-bottom: 11px;
+    margin-bottom: 16px;
   }
 
   .partners__title {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   .partners .swiper-button-next,
@@ -2417,6 +2448,17 @@ label:focus > .checkboxes__custome-checkbox {
 
   .form-content {
     border-top: none;
+    padding-top: 51px;
+    padding-bottom: 21px;
+  }
+
+  .form__shourum {
+    font-size: 18px;
+    margin-bottom: 1px;
+  }
+
+  .form__adress {
+    font-size: 14px;
   }
 
   .form__label {
@@ -2425,6 +2467,12 @@ label:focus > .checkboxes__custome-checkbox {
 
   .form__input {
     width: 100%;
+    padding: 10px 0 10px 20px;
+    margin-bottom: 19px;
+  }
+
+  .form__location {
+    margin-bottom: 19px;
   }
 
   .form__input:not(:last-child) {
@@ -2432,9 +2480,14 @@ label:focus > .checkboxes__custome-checkbox {
   }
 
   .form__btn {
-    font-size: 16px;
-    padding: 16px 15px;
-    width: 40%;
+    font-size: 12px;
+    padding: 9px 15px;
+    width: 45%;
+  }
+
+  .form__img {
+    width: 50px;
+    height: 50px;
   }
 
   .form__btn--desctop {
@@ -2447,10 +2500,16 @@ label:focus > .checkboxes__custome-checkbox {
 
   .form__contact {
     font-size: 18px;
+    margin-bottom: 13px;
+  }
+
+  .map-container {
+    height: 320px;
   }
 
   .footer {
-    padding: 20px 0 20px 0;
+    padding-top: 20px;
+    padding-bottom: 6px;
   }
 
   .footer__wrapper {
