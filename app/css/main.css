@@ -112,6 +112,7 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  padding-right: 15px;
 }
 .header__item:not(:last-child) {
   margin-right: 110px;
@@ -1555,6 +1556,7 @@ label:focus > .checkboxes__custome-checkbox {
   align-items: center;
   justify-content: space-between;
   width: 906px;
+  padding-right: 10px;
 }
 .form__input {
   border: 1px solid #333333;
@@ -1728,7 +1730,7 @@ label:focus > .checkboxes__custome-checkbox {
     margin-bottom: 30px;
   }
 }
-@media screen and (max-width: 1345px) {
+@media screen and (max-width: 1390px) {
   .header__logo {
     margin-right: 50px;
   }
@@ -1760,7 +1762,7 @@ label:focus > .checkboxes__custome-checkbox {
     max-width: 818px;
   }
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1160px) {
   .nav {
     display: none;
   }
@@ -1937,6 +1939,10 @@ label:focus > .checkboxes__custome-checkbox {
     padding-top: 39px;
     padding-bottom: 36px;
   }
+
+  .mobile-menu {
+    padding-left: 50px !important;
+  }
 }
 @media screen and (max-width: 1023px) {
   .header__logo-link {
@@ -1949,8 +1955,8 @@ label:focus > .checkboxes__custome-checkbox {
 
   .header__form-wrapper {
     bottom: 0;
-    right: 10px;
-    left: 10px;
+    right: 50px;
+    left: 50px;
     background: #000000;
   }
 
@@ -1966,6 +1972,16 @@ label:focus > .checkboxes__custome-checkbox {
     width: 187px;
   }
 
+  .header__button svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .close--header {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
   .text-content {
     padding-top: 115px;
   }
@@ -1979,7 +1995,7 @@ label:focus > .checkboxes__custome-checkbox {
   }
 
   .gallerey {
-    padding-bottom: 57px;
+    padding-bottom: 81px;
   }
 
   .gallerey__wrapper {
@@ -2036,7 +2052,7 @@ label:focus > .checkboxes__custome-checkbox {
   }
 
   .project__partners .swiper {
-    max-width: 750px;
+    width: 84%;
   }
 
   .catalog__left,
@@ -2091,12 +2107,12 @@ label:focus > .checkboxes__custome-checkbox {
 
   .partners .swiper-button-next {
     top: 48%;
-    right: -31px;
+    right: 0;
   }
 
   .partners .swiper-button-prev {
     top: 49%;
-    left: -38px;
+    left: 0;
   }
 
   .catalog__img {
@@ -2537,6 +2553,10 @@ label:focus > .checkboxes__custome-checkbox {
   .close--mobile {
     top: -419px !important;
     left: 0;
+  }
+
+  .mobile-menu {
+    padding-left: 15px !important;
   }
 }
 .mobile-menu {

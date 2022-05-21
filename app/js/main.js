@@ -69,7 +69,7 @@ const swiperEvents = new Swiper('.events__swiper', {
     },
     1024: {
       slidesPerView: 3,
-      spaceBetween: 30,
+      spaceBetween: 50,
     },
     1345: {
       slidesPerView: 3,
